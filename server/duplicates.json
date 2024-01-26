@@ -1,0 +1,769 @@
+[
+  {
+    "simplified": {
+      "sku_id": "254656543",
+      "sku_ids": [
+        "254656543",
+        "357937",
+        "1000204779000",
+        "113511011",
+        "78922011",
+        "22919",
+        "053457",
+        "4088600003788"
+      ],
+      "name": "Tesco British Semi Skimmed Milk 2.272L, 4 Pints",
+      "brand": "Tesco",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/956ab26e-6a5a-4a43-810a-669d23c2c66e/b4f9703a-7793-416c-b8ea-a1bfb7d2e9dd.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "ltr"
+        },
+        "asda": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        },
+        "morrisons": {
+          "price": 135,
+          "unit_price": 135,
+          "unit_measure": "litre"
+        },
+        "ocado": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "iceland": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 155,
+          "unit_price": 68,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "supermarket": "tesco",
+        "sku_id": "254656543",
+        "sku_ids": ["254656543"],
+        "name": "Tesco British Semi Skimmed Milk 2.272L, 4 Pints",
+        "brand": "Tesco",
+        "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/956ab26e-6a5a-4a43-810a-669d23c2c66e/b4f9703a-7793-416c-b8ea-a1bfb7d2e9dd.jpeg?h=225&w=225",
+        "price_info": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "litre"
+        }
+      },
+      "sainsburys": {
+        "supermarket": "sainsburys",
+        "sku_id": "357937",
+        "sku_ids": ["357937"],
+        "name": "Sainsbury's British Semi Skimmed Milk 2.27L (4 pint)",
+        "brand": "Sainsbury's",
+        "image": "https://assets.sainsburys-groceries.co.uk/gol/357937/image.jpg",
+        "price_info": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "ltr"
+        }
+      },
+      "asda": {
+        "supermarket": "asda",
+        "sku_id": "1000204779000",
+        "sku_ids": ["1000204779000"],
+        "name": "Yeo Valley Organic Fresh Semi Skimmed Milk",
+        "brand": "Yeo Valley",
+        "image": "https://ui.assets-asda.com/dm/asdagroceries/5036589201618?$ProdList$=&fmt=jpg&qlt=50",
+        "price_info": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        }
+      },
+      "morrisons": {
+        "supermarket": "morrisons",
+        "sku_id": "113511011",
+        "sku_ids": ["113511011"],
+        "name": "Arla LactoFREE Semi Skimmed Milk Drink",
+        "brand": "Arla",
+        "image": "https://groceries.morrisons.com/productImages/113/113511011_0_150x150.jpg?identifier=bebb8786feec910b42f21636b3b93e57",
+        "price_info": {
+          "price": 135,
+          "unit_price": 135,
+          "unit_measure": "litre"
+        }
+      },
+      "ocado": {
+        "supermarket": "ocado",
+        "sku_id": "78922011",
+        "sku_ids": ["78922011"],
+        "name": "Ocado British Semi Skimmed Milk",
+        "brand": "Ocado",
+        "image": "https://www.ocado.com/productImages/789/78922011_0_150x150.jpg?identifier=2bfb8c42b77ed628989eab70d71c7aab",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      },
+      "iceland": {
+        "supermarket": "iceland",
+        "sku_id": "22919",
+        "sku_ids": ["22919"],
+        "name": "Iceland British Semi Skimmed Milk 4 Pints 2.272L",
+        "brand": "Iceland",
+        "image": "https://iceland.a.bigcontent.io/v1/static/icelandloading",
+        "price_info": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        }
+      },
+      "waitrose": {
+        "supermarket": "waitrose",
+        "sku_id": "053457",
+        "sku_ids": ["053457"],
+        "name": "Essential British Free Range Semi Skimmed Milk 4 pints",
+        "brand": "Essential",
+        "image": "https://ecom-su-static-prod.wtrecom.com/images/products/3/LN_053457_BP_3.jpg",
+        "price_info": {
+          "price": 155,
+          "unit_price": 68,
+          "unit_measure": "litre"
+        }
+      },
+      "aldi": {
+        "supermarket": "aldi",
+        "sku_id": "4088600003788",
+        "sku_ids": ["4088600003788"],
+        "name": "Cowbelle British Skimmed Milk 2 Pints",
+        "brand": "Cowbelle",
+        "image": "https://aldprdproductimages.azureedge.net/media/resized/$Aldi_GB/14.09.21/4088600003788_0_M.jpg",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      }
+    }
+  },
+  {
+    "simplified": {
+      "sku_id": "254656399",
+      "sku_ids": ["254656399", "181402", "22918", "053404", "4088600003900"],
+      "name": "Tesco British Whole Milk 2.272L, 4 Pints",
+      "brand": "Tesco",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/1a509774-8592-41df-ace1-bbe2eb893954/4d991179-f47d-48f9-83c0-71e15889aa87.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "ltr"
+        },
+        "iceland": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 155,
+          "unit_price": 68,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 90,
+          "unit_price": 158,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "supermarket": "tesco",
+        "sku_id": "254656399",
+        "sku_ids": ["254656399"],
+        "name": "Tesco British Whole Milk 2.272L, 4 Pints",
+        "brand": "Tesco",
+        "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/1a509774-8592-41df-ace1-bbe2eb893954/4d991179-f47d-48f9-83c0-71e15889aa87.jpeg?h=225&w=225",
+        "price_info": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "litre"
+        }
+      },
+      "sainsburys": {
+        "supermarket": "sainsburys",
+        "sku_id": "181402",
+        "sku_ids": ["181402"],
+        "name": "Sainsbury's British Whole Milk 2.27L (4 pint)",
+        "brand": "Sainsbury's",
+        "image": "https://assets.sainsburys-groceries.co.uk/gol/181402/image.jpg",
+        "price_info": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "ltr"
+        }
+      },
+      "iceland": {
+        "supermarket": "iceland",
+        "sku_id": "22918",
+        "sku_ids": ["22918"],
+        "name": "Iceland British Whole Milk 4 Pints 2.272L",
+        "brand": "Iceland",
+        "image": "https://iceland.a.bigcontent.io/v1/static/icelandloading",
+        "price_info": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        }
+      },
+      "waitrose": {
+        "supermarket": "waitrose",
+        "sku_id": "053404",
+        "sku_ids": ["053404"],
+        "name": "Essential British Free Range Whole Milk 4 pints",
+        "brand": "Essential",
+        "image": "https://ecom-su-static-prod.wtrecom.com/images/products/3/LN_053404_BP_3.jpg",
+        "price_info": {
+          "price": 155,
+          "unit_price": 68,
+          "unit_measure": "litre"
+        }
+      },
+      "aldi": {
+        "supermarket": "aldi",
+        "sku_id": "4088600003900",
+        "sku_ids": ["4088600003900"],
+        "name": "Cowbelle British Whole Milk 1 Pint",
+        "brand": "Cowbelle",
+        "image": "https://aldprdproductimages.azureedge.net/media/$Aldi_GB/26.09.22/4088600003900_0.jpg",
+        "price_info": {
+          "price": 90,
+          "unit_price": 158,
+          "unit_measure": "litre"
+        }
+      }
+    }
+  },
+  {
+    "simplified": {
+      "sku_id": "252207537",
+      "sku_ids": [
+        "252207537",
+        "1137637",
+        "1000204779000",
+        "113511011",
+        "78922011",
+        "22919",
+        "053448",
+        "4088600003788"
+      ],
+      "name": "Tesco British Semi Skimmed Milk 1.13L, 2 Pints",
+      "brand": "Tesco",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/de8b19af-6b47-4c60-a1cf-19e3623c5e30/f2992ba8-00b6-43c4-9c33-6a8235ef63d0.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "ltr"
+        },
+        "asda": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        },
+        "morrisons": {
+          "price": 135,
+          "unit_price": 135,
+          "unit_measure": "litre"
+        },
+        "ocado": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "iceland": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 125,
+          "unit_price": 111,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "supermarket": "tesco",
+        "sku_id": "252207537",
+        "sku_ids": ["252207537"],
+        "name": "Tesco British Semi Skimmed Milk 1.13L, 2 Pints",
+        "brand": "Tesco",
+        "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/de8b19af-6b47-4c60-a1cf-19e3623c5e30/f2992ba8-00b6-43c4-9c33-6a8235ef63d0.jpeg?h=225&w=225",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      },
+      "sainsburys": {
+        "supermarket": "sainsburys",
+        "sku_id": "1137637",
+        "sku_ids": ["1137637"],
+        "name": "Sainsbury's British Semi Skimmed Milk 1.13L (2 pint)",
+        "brand": "Sainsbury's",
+        "image": "https://assets.sainsburys-groceries.co.uk/gol/1137637/image.jpg",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "ltr"
+        }
+      },
+      "asda": {
+        "supermarket": "asda",
+        "sku_id": "1000204779000",
+        "sku_ids": ["1000204779000"],
+        "name": "Yeo Valley Organic Fresh Semi Skimmed Milk",
+        "brand": "Yeo Valley",
+        "image": "https://ui.assets-asda.com/dm/asdagroceries/5036589201618?$ProdList$=&fmt=jpg&qlt=50",
+        "price_info": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        }
+      },
+      "morrisons": {
+        "supermarket": "morrisons",
+        "sku_id": "113511011",
+        "sku_ids": ["113511011"],
+        "name": "Arla LactoFREE Semi Skimmed Milk Drink",
+        "brand": "Arla",
+        "image": "https://groceries.morrisons.com/productImages/113/113511011_0_150x150.jpg?identifier=bebb8786feec910b42f21636b3b93e57",
+        "price_info": {
+          "price": 135,
+          "unit_price": 135,
+          "unit_measure": "litre"
+        }
+      },
+      "ocado": {
+        "supermarket": "ocado",
+        "sku_id": "78922011",
+        "sku_ids": ["78922011"],
+        "name": "Ocado British Semi Skimmed Milk",
+        "brand": "Ocado",
+        "image": "https://www.ocado.com/productImages/789/78922011_0_150x150.jpg?identifier=2bfb8c42b77ed628989eab70d71c7aab",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      },
+      "iceland": {
+        "supermarket": "iceland",
+        "sku_id": "22919",
+        "sku_ids": ["22919"],
+        "name": "Iceland British Semi Skimmed Milk 4 Pints 2.272L",
+        "brand": "Iceland",
+        "image": "https://iceland.a.bigcontent.io/v1/static/icelandloading",
+        "price_info": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        }
+      },
+      "waitrose": {
+        "supermarket": "waitrose",
+        "sku_id": "053448",
+        "sku_ids": ["053448"],
+        "name": "Essential British Free Range Semi Skimmed Milk 2 pints",
+        "brand": "Essential",
+        "image": "https://ecom-su-static-prod.wtrecom.com/images/products/3/LN_053448_BP_3.jpg",
+        "price_info": {
+          "price": 125,
+          "unit_price": 111,
+          "unit_measure": "litre"
+        }
+      },
+      "aldi": {
+        "supermarket": "aldi",
+        "sku_id": "4088600003788",
+        "sku_ids": ["4088600003788"],
+        "name": "Cowbelle British Skimmed Milk 2 Pints",
+        "brand": "Cowbelle",
+        "image": "https://aldprdproductimages.azureedge.net/media/resized/$Aldi_GB/14.09.21/4088600003788_0_M.jpg",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      }
+    }
+  },
+  {
+    "simplified": {
+      "sku_id": "254278040",
+      "sku_ids": [
+        "254278040",
+        "1137637",
+        "910000392586",
+        "318143011",
+        "78922011",
+        "22919",
+        "053447",
+        "4088600003825"
+      ],
+      "name": "Tesco British Semi Skimmed Longlife Uht Milk 1 Litre",
+      "brand": "Tesco",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/9a0cf276-73e0-4f60-9440-16e0f906338a/6a6314ae-7cae-4f56-a6ea-38270be4a5f0.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 120,
+          "unit_price": 120,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "ltr"
+        },
+        "asda": {
+          "price": 585,
+          "unit_price": 98,
+          "unit_measure": "lt"
+        },
+        "morrisons": {
+          "price": 250,
+          "unit_price": 125,
+          "unit_measure": "litre"
+        },
+        "ocado": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "iceland": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 95,
+          "unit_price": 168,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 90,
+          "unit_price": 158,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "supermarket": "tesco",
+        "sku_id": "254278040",
+        "sku_ids": ["254278040"],
+        "name": "Tesco British Semi Skimmed Longlife Uht Milk 1 Litre",
+        "brand": "Tesco",
+        "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/9a0cf276-73e0-4f60-9440-16e0f906338a/6a6314ae-7cae-4f56-a6ea-38270be4a5f0.jpeg?h=225&w=225",
+        "price_info": {
+          "price": 120,
+          "unit_price": 120,
+          "unit_measure": "litre"
+        }
+      },
+      "sainsburys": {
+        "supermarket": "sainsburys",
+        "sku_id": "1137637",
+        "sku_ids": ["1137637"],
+        "name": "Sainsbury's British Semi Skimmed Milk 1.13L (2 pint)",
+        "brand": "Sainsbury's",
+        "image": "https://assets.sainsburys-groceries.co.uk/gol/1137637/image.jpg",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "ltr"
+        }
+      },
+      "asda": {
+        "supermarket": "asda",
+        "sku_id": "910000392586",
+        "sku_ids": ["910000392586"],
+        "name": "ASDA Long Life Skimmed Milk X6",
+        "brand": "ASDA",
+        "image": "https://ui.assets-asda.com/dm/asdagroceries/5051413682296?$ProdList$=&fmt=jpg&qlt=50",
+        "price_info": {
+          "price": 585,
+          "unit_price": 98,
+          "unit_measure": "lt"
+        }
+      },
+      "morrisons": {
+        "supermarket": "morrisons",
+        "sku_id": "318143011",
+        "sku_ids": ["318143011"],
+        "name": "Arla BOB Skimmed Milk Tastes like Semi Skimmed",
+        "brand": "Arla",
+        "image": "https://groceries.morrisons.com/productImages/318/318143011_0_150x150.jpg?identifier=0c2039987d7a4f241b0cc33027349423",
+        "price_info": {
+          "price": 250,
+          "unit_price": 125,
+          "unit_measure": "litre"
+        }
+      },
+      "ocado": {
+        "supermarket": "ocado",
+        "sku_id": "78922011",
+        "sku_ids": ["78922011"],
+        "name": "Ocado British Semi Skimmed Milk",
+        "brand": "Ocado",
+        "image": "https://www.ocado.com/productImages/789/78922011_0_150x150.jpg?identifier=2bfb8c42b77ed628989eab70d71c7aab",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      },
+      "iceland": {
+        "supermarket": "iceland",
+        "sku_id": "22919",
+        "sku_ids": ["22919"],
+        "name": "Iceland British Semi Skimmed Milk 4 Pints 2.272L",
+        "brand": "Iceland",
+        "image": "https://iceland.a.bigcontent.io/v1/static/icelandloading",
+        "price_info": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        }
+      },
+      "waitrose": {
+        "supermarket": "waitrose",
+        "sku_id": "053447",
+        "sku_ids": ["053447"],
+        "name": "Essential British Free Range Semi Skimmed Milk 1 pint",
+        "brand": "Essential",
+        "image": "https://ecom-su-static-prod.wtrecom.com/images/products/3/LN_053447_BP_3.jpg",
+        "price_info": {
+          "price": 95,
+          "unit_price": 168,
+          "unit_measure": "litre"
+        }
+      },
+      "aldi": {
+        "supermarket": "aldi",
+        "sku_id": "4088600003825",
+        "sku_ids": ["4088600003825"],
+        "name": "Cowbelle British Semi-skimmed Milk 1.7% Fat 1 Pint",
+        "brand": "Cowbelle",
+        "image": "https://aldprdproductimages.azureedge.net/media/$Aldi_GB/13.02.23%20(1)/4088600003825_0.jpg",
+        "price_info": {
+          "price": 90,
+          "unit_price": 158,
+          "unit_measure": "litre"
+        }
+      }
+    }
+  },
+  {
+    "simplified": {
+      "sku_id": "257264875",
+      "sku_ids": [
+        "257264875",
+        "3216620",
+        "484291",
+        "110038011",
+        "78922011",
+        "32024",
+        "053448",
+        "4088600003788"
+      ],
+      "name": "Cravendale Semi Skimmed Milk 2 Litre",
+      "brand": "Cravendale",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/21338f7a-87a4-4e1b-b0b7-0c39fa2367c4/59bd2719-aea2-4eb8-aae2-c6433f10aa13.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 240,
+          "unit_price": 120,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 230,
+          "unit_price": 114.99999999999999,
+          "unit_measure": "ltr"
+        },
+        "asda": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        },
+        "morrisons": {
+          "price": 255,
+          "unit_price": 128,
+          "unit_measure": "litre"
+        },
+        "ocado": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "iceland": {
+          "price": 165,
+          "unit_price": 83,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 125,
+          "unit_price": 111,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "supermarket": "tesco",
+        "sku_id": "257264875",
+        "sku_ids": ["257264875"],
+        "name": "Cravendale Semi Skimmed Milk 2 Litre",
+        "brand": "Cravendale",
+        "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/21338f7a-87a4-4e1b-b0b7-0c39fa2367c4/59bd2719-aea2-4eb8-aae2-c6433f10aa13.jpeg?h=225&w=225",
+        "price_info": {
+          "price": 240,
+          "unit_price": 120,
+          "unit_measure": "litre"
+        }
+      },
+      "sainsburys": {
+        "supermarket": "sainsburys",
+        "sku_id": "3216620",
+        "sku_ids": ["3216620"],
+        "name": "Cravendale Filtered Fresh Semi Skimmed Milk 2L Fresher for L...",
+        "brand": "Cravendale",
+        "image": "https://assets.sainsburys-groceries.co.uk/gol/3216620/image.jpg",
+        "price_info": {
+          "price": 230,
+          "unit_price": 114.99999999999999,
+          "unit_measure": "ltr"
+        }
+      },
+      "asda": {
+        "supermarket": "asda",
+        "sku_id": "484291",
+        "sku_ids": ["484291"],
+        "name": "Cravendale Filtered Fresh Skimmed Milk Fresher for Longer",
+        "brand": "Cravendale",
+        "image": "https://ui.assets-asda.com/dm/asdagroceries/5000181024692?$ProdList$=&fmt=jpg&qlt=50",
+        "price_info": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        }
+      },
+      "morrisons": {
+        "supermarket": "morrisons",
+        "sku_id": "110038011",
+        "sku_ids": ["110038011"],
+        "name": "Cravendale Filtered Fresh Semi Skim…",
+        "brand": "Cravendale",
+        "image": "https://groceries.morrisons.com/productImages/110/110038011_0_150x150.jpg?identifier=7088f461a6d28ec87b0a68ad398ba43d",
+        "price_info": {
+          "price": 255,
+          "unit_price": 128,
+          "unit_measure": "litre"
+        }
+      },
+      "ocado": {
+        "supermarket": "ocado",
+        "sku_id": "78922011",
+        "sku_ids": ["78922011"],
+        "name": "Ocado British Semi Skimmed Milk",
+        "brand": "Ocado",
+        "image": "https://www.ocado.com/productImages/789/78922011_0_150x150.jpg?identifier=2bfb8c42b77ed628989eab70d71c7aab",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      },
+      "iceland": {
+        "supermarket": "iceland",
+        "sku_id": "32024",
+        "sku_ids": ["32024"],
+        "name": "Dale Farm Fresh Semi-Skimmed Milk 3.52 Pints/2L",
+        "brand": "Dale",
+        "image": "https://iceland.a.bigcontent.io/v1/static/icelandloading",
+        "price_info": {
+          "price": 165,
+          "unit_price": 83,
+          "unit_measure": "1 litre"
+        }
+      },
+      "waitrose": {
+        "supermarket": "waitrose",
+        "sku_id": "053448",
+        "sku_ids": ["053448"],
+        "name": "Essential British Free Range Semi Skimmed Milk 2 pints",
+        "brand": "Essential",
+        "image": "https://ecom-su-static-prod.wtrecom.com/images/products/3/LN_053448_BP_3.jpg",
+        "price_info": {
+          "price": 125,
+          "unit_price": 111,
+          "unit_measure": "litre"
+        }
+      },
+      "aldi": {
+        "supermarket": "aldi",
+        "sku_id": "4088600003788",
+        "sku_ids": ["4088600003788"],
+        "name": "Cowbelle British Skimmed Milk 2 Pints",
+        "brand": "Cowbelle",
+        "image": "https://aldprdproductimages.azureedge.net/media/resized/$Aldi_GB/14.09.21/4088600003788_0_M.jpg",
+        "price_info": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      }
+    }
+  }
+]

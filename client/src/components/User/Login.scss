@@ -1,0 +1,109 @@
+.login-form {
+  font: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.userButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userButtons button {
+  margin-bottom: 10px;
+}
+
+.validation-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.validation-error p {
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loyalty-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 1px;
+  max-width: 350px;
+  margin: auto;
+  border-radius: 10px;
+  // background-color: #48bdff;
+  background-color: #00563f;
+}
+
+.loyalty {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0.5px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tesco {
+  font-weight: 500;
+  color: #ee1c2e;
+}
+.asda {
+  font-weight: 600;
+  color: #78be20;
+}
+.sainsburys {
+  color: #ec8a00;
+  font-weight: 500;
+}
+.morrisons {
+  color: #00563f;
+  font-weight: 500;
+}
+.waitrose {
+  color: #7bb135;
+  font-weight: 500;
+}
+.iceland {
+  color: #d2212e;
+  font-weight: 500;
+}
+.ocado {
+  color: #4d216d;
+  font-weight: 600;
+}
+.aldi {
+  color: #1fc4f4;
+  font-weight: 500;
+}
+
+#loyalty-head {
+  margin-top: 40px;
+  background-color: #00563f;
+  font-size: 1.2em;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: var(--text-color-dark);
+  color: rgb(244, 244, 244);
+}
+
+.login-logo {
+  margin-top: 20px;
+}

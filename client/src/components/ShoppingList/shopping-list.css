@@ -1,0 +1,323 @@
+.shopping-list-modal-overlay {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.shopping-list-modal-overlay .shopping-list-modal {
+  background-color: var(--main-bg-color);
+  color: var(--text-color-dark);
+  border-radius: 20px;
+  box-shadow: 0 0 30px black;
+}
+.shopping-list-modal-overlay .shopping-list-modal button {
+  width: 40%;
+}
+.shopping-list-modal-overlay .shopping-list-modal .shopping-list-modal-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-lists {
+  position: relative;
+  min-height: 250px;
+  width: 600px;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.shopping-lists p {
+  border: none;
+  padding: inherit;
+  margin: inherit;
+  border-radius: 0;
+}
+.shopping-lists * {
+  padding: 3px;
+  margin: 3px;
+}
+.shopping-lists .tesco-text-style {
+  font-weight: 500;
+  color: #ee1c2e;
+}
+.shopping-lists .asda-text-style {
+  font-weight: 600;
+  color: #78be20;
+}
+.shopping-lists .sainsburys-text-style {
+  color: #ec8a00;
+  font-weight: 500;
+}
+.shopping-lists .morrisons-text-style {
+  color: #00563f;
+  font-weight: 500;
+}
+.shopping-lists .waitrose-text-style {
+  color: #7bb135;
+  font-weight: 500;
+}
+.shopping-lists .iceland-text-style {
+  color: #d2212e;
+  font-weight: 500;
+}
+.shopping-lists .shopping-lists-header {
+  width: 100%;
+}
+.shopping-lists .shopping-lists-items {
+  cursor: pointer;
+  width: 100%;
+}
+.shopping-lists .shopping-lists-items > div:nth-child(2n+1) {
+  background-color: var(--color-table-row-2);
+  border-top: 5px solid var(--color-palette-4);
+}
+.shopping-lists .shopping-lists-items > div:nth-child(2n) {
+  background-color: var(--color-table-row-1);
+  border-top: 5px solid var(--color-palette-1);
+}
+.shopping-lists .shopping-lists-items :hover {
+  opacity: 0.8;
+}
+.shopping-lists .shopping-lists-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.shopping-lists .shopping-lists-buttons > button {
+  width: 100%;
+}
+
+.shopping-list {
+  position: relative;
+  min-height: 250px;
+  width: 600px;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.shopping-list p {
+  border: none;
+  padding: inherit;
+  margin: inherit;
+  border-radius: 0;
+}
+.shopping-list * {
+  padding: 3px;
+  margin: 3px;
+}
+.shopping-list .tesco-text-style {
+  font-weight: 500;
+  color: #ee1c2e;
+}
+.shopping-list .asda-text-style {
+  font-weight: 600;
+  color: #78be20;
+}
+.shopping-list .sainsburys-text-style {
+  color: #ec8a00;
+  font-weight: 500;
+}
+.shopping-list .morrisons-text-style {
+  color: #00563f;
+  font-weight: 500;
+}
+.shopping-list .waitrose-text-style {
+  color: #7bb135;
+  font-weight: 500;
+}
+.shopping-list .iceland-text-style {
+  color: #d2212e;
+  font-weight: 500;
+}
+.shopping-list .shopping-list-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.shopping-list .shopping-list-buttons > button {
+  width: 100%;
+}
+.shopping-list .shopping-list-buttons > p {
+  color: var(--color-palette-1);
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 10px;
+}
+.shopping-list .shopping-list-buttons .shopping-list-buttons-delete {
+  color: var(--color-palette-2);
+}
+.shopping-list .shopping-list-empty {
+  text-align: center;
+}
+.shopping-list .shopping-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.shopping-list .shopping-list-header .shopping-list-header-name-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shopping-list .shopping-list-header .mode-select {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+.shopping-list .shopping-list-header .mode-select > div {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.shopping-list .shopping-list-header .mode-select > div div {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background-color: black;
+  border-radius: 12px;
+}
+.shopping-list .shopping-list-header .mode-select-edit > div {
+  justify-content: flex-end;
+}
+.shopping-list .shopping-list-header .mode-select-view > div {
+  justify-content: flex-start;
+}
+.shopping-list .shopping-list-supermarket-totals {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.shopping-list .shopping-list-supermarket-totals .shopping-list-supermarket-selected,
+.shopping-list .shopping-list-supermarket-totals .shopping-list-supermarket-not-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 140px;
+  height: 80px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: rgb(228, 228, 228);
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+}
+.shopping-list .shopping-list-supermarket-totals .shopping-list-supermarket-selected {
+  border: 5px solid var(--color-palette-3);
+}
+.shopping-list .shopping-list-supermarket-totals .shopping-list-supermarket-cheapest::before {
+  content: "Cheapest";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 100px;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75em;
+  color: black;
+  padding: 5px;
+  background-color: var(--color-palette-4);
+  border-radius: 10px;
+}
+.shopping-list .shopping-list-supermarket-totals-missing-data {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+}
+.shopping-list .shopping-list-items {
+  width: 100%;
+}
+.shopping-list .shopping-list-item:nth-child(2n) {
+  background-color: var(--color-table-row-2);
+  border-top: 5px solid var(--color-palette-4);
+}
+.shopping-list .shopping-list-item:nth-child(2n+1) {
+  background-color: var(--color-table-row-1);
+  border-top: 5px solid var(--color-palette-1);
+}
+.shopping-list .shopping-list-item {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 5px solid var(--color-palette-1);
+}
+.shopping-list .shopping-list-item :hover {
+  opacity: 0.8;
+}
+.shopping-list .shopping-list-item .shopping-list-edit-quantity {
+  width: 130px;
+  display: flex;
+  font-size: 1.3em;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-between;
+}
+.shopping-list .shopping-list-item .shopping-list-edit-quantity .shopping-list-edit-quantity-control {
+  font-size: 1.5em;
+  font-weight: 400;
+  background-color: var(--color-palette-3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.shopping-list .shopping-list-item .shopping-list-edit-quantity .shopping-list-edit-quantity-control > span {
+  transform: translateY(-1px);
+}
+.shopping-list .shopping-list-item .delete {
+  cursor: pointer;
+  color: var(--color-palette-2);
+}
+.shopping-list .shopping-list-item .description {
+  width: 280px;
+}
+.shopping-list .shopping-list-item .quantity {
+  width: 40px;
+}
+.shopping-list .shopping-list-item .price-per-item,
+.shopping-list .shopping-list-item .price-total {
+  width: 70px;
+}
+.shopping-list .shopping-list-item input[type=checkbox] {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  accent-color: white;
+  box-shadow: 0 0 5px var(--color-palette-3);
+}/*# sourceMappingURL=shopping-list.css.map */

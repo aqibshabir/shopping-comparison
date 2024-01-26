@@ -1,0 +1,61 @@
+.camera-container {
+  max-width: 700px;
+  position: relative;
+  button {
+    z-index: 1;
+  }
+}
+
+.camera {
+  overflow: hidden;
+  display: none;
+  // position: absolute;
+}
+
+.camera video {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.camera canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.information {
+  padding: 1em;
+  display: none;
+}
+
+.camera-open .camera,
+.camera-open .information {
+  display: block;
+}
+
+.camera-button {
+  display: flex;
+  border-radius: 20%;
+  background-color: rgb(30, 23, 126);
+  color: white;
+  padding: 8px 10px 8px 10px;
+  font-size: 25px;
+  cursor: pointer;
+  .svg {
+    display: block;
+    width: 50px;
+  }
+}
+
+.camera-button:hover {
+  background-color: rgba(30, 23, 126, 0.719);
+}
+
+@media (min-width: 600px) {
+  .camera-container {
+    max-width: 700px;
+  }
+}

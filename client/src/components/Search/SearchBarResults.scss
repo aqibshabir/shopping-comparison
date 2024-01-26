@@ -1,0 +1,197 @@
+//Search Bar
+
+.search {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 5px;
+  margin-bottom: 30px;
+  align-items: center;
+
+  .searchBox {
+    width: 200px;
+    margin-right: 5px;
+  }
+
+  .searchButton {
+    height: min-content;
+    background-color: rgb(30, 23, 126);
+    border: none;
+    padding: 5px 9px 5px 9px;
+    color: white;
+    margin-right: 5px;
+    font-size: 25px;
+  }
+
+  @media (min-width: 600px) {
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+    .searchBox {
+      width: 300px;
+    }
+  }
+}
+//Sort Dropdown
+
+.sortBox {
+  position: relative;
+  max-width: 400px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: smaller;
+  background-color: white;
+}
+
+//Search Results
+
+.search-result {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 7px;
+  border-color: rgba(21, 16, 88, 1);
+  border-style: solid;
+  border-width: 3px;
+  padding-right: 20px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+
+  .search-result-image {
+    width: 250px;
+  }
+
+  .search-result-name {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 7px;
+  }
+
+  .text-results {
+    padding-left: 10px;
+  }
+
+  .brand {
+    padding: 5px;
+    width: fit-content;
+    font-size: smaller;
+    font-weight: 500;
+    background: rgb(226, 226, 226);
+    color: rgb(0, 0, 0);
+  }
+
+  .store-name {
+    padding-bottom: 1px;
+  }
+
+  .Asda {
+    color: #78be20;
+    font-weight: 500;
+    font-size: medium;
+  }
+
+  .Tesco {
+    color: #ee1c2e;
+    font-weight: 500;
+    font-size: medium;
+  }
+
+  .Waitrose {
+    color: #2b620b;
+    font-weight: 500;
+    font-size: medium;
+  }
+
+  .Sainsburys {
+    color: #ec8a00;
+    font-weight: 500;
+    font-size: medium;
+  }
+
+  .Morrisons {
+    color: #00563f;
+    font-weight: 500;
+    font-size: medium;
+  }
+
+  .Iceland {
+    color: #d2212e;
+    font-weight: 500;
+    font-size: medium;
+  }
+
+  .Ocado {
+    color: #4d216d;
+    font-weight: 500;
+    font-size: medium;
+  }
+
+  .Aldi {
+    color: #1fc4f4;
+    font-weight: 500;
+    font-size: medium;
+  }
+}
+
+.lowest {
+  // padding: 4px;
+  font-weight: 500;
+}
+
+.unit-price-measure {
+  font-size: small;
+  color: grey;
+  font-weight: 400;
+}
+
+.store-name {
+  font-size: medium;
+}
+
+.store-price {
+  font-size: medium;
+  color: black;
+  font-weight: 400;
+}
+
+.best-price {
+  color: black;
+  display: inline-block;
+  font-size: smaller;
+  border-radius: 4px;
+  padding-top: 0px;
+  margin-left: 4px;
+  padding-right: 4px;
+  border-color: rgb(50, 159, 33);
+  border-style: solid;
+  border-width: 3px;
+  background-color: rgb(193, 226, 194);
+}
+
+// Initially hide the unit price measure
+.unit-price-measure {
+  display: none;
+}
+
+// Media query for screens wider than 532px
+@media (min-width: 600px) {
+  .unit-price-measure {
+    display: inline;
+  }
+}
+
+@media (min-width: 600px) {
+  .search-result {
+    flex-direction: row;
+  }
+}
+
+.container {
+  height: 100vh;
+}

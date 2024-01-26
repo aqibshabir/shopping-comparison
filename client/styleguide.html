@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+      /* APP-WIDE CSS */
+
+      :root {
+        /* Main greyscale text and bg color */
+        --main-bg-color: rgb(247, 247, 247);
+        --main-text-color: rgb(64, 64, 64);
+
+        /* Base color palette */
+        /* Try different ones here: https://color.adobe.com/search */
+        --color-palette-1: #48bdff;
+        --color-palette-2: #ff473b;
+        --color-palette-3: #8f36e8;
+        --color-palette-4: #ffeb00;
+        --color-palette-5: #36e856;
+
+        --color-table-row-1: #a3ddff;
+        --color-table-row-2: #fef6a4;
+
+        --text-color-light: rgb(244, 244, 244);
+        --text-color-dark: rgb(41, 41, 41);
+      }
+
+      /* Simple reset */
+      *,
+      *::before,
+      *::after {
+        margin: 4px;
+        padding: 4px;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        /* Default fonts and colors */
+        font-size: 1.8rem;
+        font-weight: 400;
+        background-color: var(--main-bg-color);
+        color: var(--text-color-dark);
+      }
+
+      /* HEADING SIZING AND FONTS */
+
+      h1 {
+        font-size: 2.4em;
+        font-weight: 800;
+      }
+
+      h2 {
+        font-size: 2em;
+        font-weight: 500;
+      }
+
+      h3 {
+        font-size: 1.6em;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+
+      /* FONT WEIGHT LIGHTEN CLASS */
+      .lighter {
+        font-weight: 300;
+      }
+
+      .bolder {
+        font-weight: 600;
+      }
+
+      /* FORM ELEMENTS */
+      input,
+      select,
+      button {
+        font: inherit;
+        font-size: 1.2em;
+        padding: 5px 15px 5px 15px;
+        border-radius: 10px;
+        border: 2px solid black;
+        color: var(--text-color-dark);
+        box-shadow: 0 0 3px var(--button-shadow-color);
+      }
+      button {
+        background-color: var(--color-palette-1);
+        transition: opacity 0.2s ease-in-out;
+      }
+      button:hover {
+        opacity: 0.7;
+      }
+
+      /* LINKS */
+      a {
+        text-decoration: none;
+        color: var(--color-palette-3);
+      }
+      a:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+      }
+
+      /* GENERIC COLOR CLASSES */
+      .button-color-1 {
+        background-color: var(--color-palette-1);
+        color: var(--text-color-dark);
+      }
+      .button-color-2 {
+        background-color: var(--color-palette-2);
+        color: var(--text-color-light);
+      }
+      .button-color-3 {
+        background-color: var(--color-palette-3);
+        color: var(--text-color-light);
+      }
+      .button-color-4 {
+        background-color: var(--color-palette-4);
+        color: var(--text-color-dark);
+      }
+      .button-color-5 {
+        background-color: var(--color-palette-5);
+        color: var(--text-color-dark);
+      }
+      .table-row-1 {
+        background-color: var(--color-table-row-1);
+        color: var(--text-color-dark);
+      }
+      .table-row-2 {
+        background-color: var(--color-table-row-2);
+        color: var(--text-color-dark);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1 &lt;h1&gt;</h1>
+    <h2>Heading 2 &lt;h2&gt;</h2>
+    <h3>Heading 3 &lt;h3&gt;</h3>
+
+    <p>
+      Paragraph Tag &lt;p&gt;: (no extra classes)<br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos delectus aspernatur repellat neque
+      consequatur ullam facilis, laborum officiis <a href="#">This is a link</a> voluptatem, id earum ipsam aliquid quidem libero. Quaerat pariatur
+      eaque temporibus obcaecati.
+    </p>
+
+    <p class="lighter">
+      Paragraph Tag &lt;p&gt;: with class 'lighter'.<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum obcaecati dolorum
+      officiis optio beatae distinctio? Odio delectus rem impedit quae iure? <a href="#">This is a link</a>Quibusdam tempore dolores quod nihil nulla
+      quos possimus?
+    </p>
+
+    <p class="bolder">
+      Paragraph Tag &lt;p&gt;: with class 'bolder'.<br />: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum obcaecati dolorum
+      officiis optio beatae distinctio? Odio delectus rem impedit quae iure? <a href="#">This is a link</a>Quibusdam tempore dolores quod nihil nulla
+      quos possimus?
+    </p>
+
+    <div>
+      <a href="#">This is a stand-alone link inside a div</a>
+    </div>
+
+    <button>Button (default, no class)</button>
+    <button class="button-color-1">Button with class 'button-color-1'</button>
+    <button class="button-color-2">Button with class 'button-color-2'</button>
+    <button class="button-color-3">Button with class 'button-color-3'</button>
+    <button class="button-color-4">Button with class 'button-color-4'</button>
+    <button class="button-color-5">Button with class 'button-color-5'</button>
+
+    <input type="text" placeholder="This is a text input box" />
+    <select>
+      <option>This is a select box</option>
+    </select>
+
+    <h2>Main Color Palette</h2>
+    <div class="button-color-1">Class: button-color-1, background-color: var(--color-palette-1); color: var(--text-color-dark);</div>
+    <div class="button-color-2">Class: button-color-2, background-color: var(--color-palette-2); color: var(--text-color-light);</div>
+    <div class="button-color-3">Class: button-color-3, background-color: var(--color-palette-3); color: var(--text-color-light);</div>
+    <div class="button-color-4">Class: button-color-4, background-color: var(--color-palette-4); color: var(--text-color-dark);</div>
+    <div class="button-color-5">Class: button-color-5, background-color: var(--color-palette-5); color: var(--text-color-dark);</div>
+    <h2>Table Row Colors</h2>
+    <div class="table-row-1">Class: table-row-1, background-color: var(--color-table-row-1); color: var(--text-color-dark);</div>
+    <div class="table-row-2">Class: table-row-2, background-color: var(--color-table-row-2); color: var(--text-color-dark);</div>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+// @font-face {
+//   font-family: Sansita One;
+//   src: url(./SansitaOne.woff2) format("woff2");
+// }
+/* APP-WIDE CSS */
+
+:root {
+  /* Main greyscale text and bg color */
+  --main-bg-color: rgb(247, 247, 247);
+  --main-text-color: rgb(64, 64, 64);
+
+  /* Base color palette */
+  /* Try different ones here: https://color.adobe.com/search */
+  --color-palette-1: #48bdff;
+  --color-palette-2: #ff473b;
+  --color-palette-3: #8f36e8;
+  --color-palette-4: #ffeb00;
+  --color-palette-5: #36e856;
+
+  --color-table-row-1: #a3ddff;
+  --color-table-row-2: #fef6a4;
+  --color-table-row-3: #c39beb;
+
+  --text-color-light: rgb(244, 244, 244);
+  --text-color-dark: rgb(41, 41, 41);
+}
+
+/* Simple reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  /* Default fonts and colors */
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text-color-dark);
+}
+
+/* HEADING SIZING AND FONTS */
+
+h1 {
+  font-size: 2.4em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+/* FONT WEIGHT LIGHTEN CLASS */
+.lighter {
+  font-weight: 300;
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+/* FORM ELEMENTS */
+input,
+select,
+button {
+  font: inherit;
+  font-size: 1.2em;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: var(--text-color-dark);
+  box-shadow: 0 0 3px var(--button-shadow-color);
+}
+button {
+  cursor: pointer;
+  background-color: var(--color-palette-1);
+  transition: opacity 0.2s ease-in-out;
+}
+button:hover {
+  opacity: 0.7;
+}
+
+.userButtons .createUser {
+  font: inherit;
+  font-size: 1.2em;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: var(--text-color-dark);
+  box-shadow: 0 0 3px var(--button-shadow-color);
+  background-color: var(--color-palette-1);
+  color: var(--text-color-dark);
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+  color: var(--color-palette-3);
+}
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* GENERIC COLOR CLASSES */
+.button-color-1 {
+  background-color: var(--color-palette-1);
+  color: var(--text-color-dark);
+}
+.button-color-2 {
+  background-color: var(--color-palette-2);
+  color: var(--text-color-light);
+}
+.button-color-3 {
+  background-color: var(--color-palette-3);
+  color: var(--text-color-light);
+}
+.button-color-4 {
+  background-color: var(--color-palette-4);
+  color: var(--text-color-dark);
+}
+.button-color-5 {
+  background-color: var(--color-palette-5);
+  color: var(--text-color-dark);
+}
+.table-row-1 {
+  background-color: var(--color-table-row-1);
+  color: var(--text-color-dark);
+}
+.table-row-2 {
+  background-color: var(--color-table-row-2);
+  color: var(--text-color-dark);
+}
+
+.global {
+  display: flex;
+  justify-content: flex-start;
+}

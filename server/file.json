@@ -1,0 +1,584 @@
+[
+  {
+    "simplified": {
+      "sku_id": "254656543",
+      "sku_ids": [
+        "254656543",
+        "357937",
+        "1000204779000",
+        "113511011",
+        "78922011",
+        "22919",
+        "053457",
+        "4088600003788"
+      ],
+      "name": "Tesco British Semi Skimmed Milk 2.272L, 4 Pints",
+      "brand": "Tesco",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/956ab26e-6a5a-4a43-810a-669d23c2c66e/b4f9703a-7793-416c-b8ea-a1bfb7d2e9dd.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "ltr"
+        },
+        "asda": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        },
+        "morrisons": {
+          "price": 135,
+          "unit_price": 135,
+          "unit_measure": "litre"
+        },
+        "ocado": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "iceland": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 155,
+          "unit_price": 68,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "0": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "litre"
+        },
+        "sku": "254656543"
+      },
+      "sainsburys": {
+        "0": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "ltr"
+        },
+        "sku": "357937"
+      },
+      "asda": {
+        "0": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        },
+        "sku": "1000204779000"
+      },
+      "morrisons": {
+        "0": {
+          "price": 135,
+          "unit_price": 135,
+          "unit_measure": "litre"
+        },
+        "sku": "113511011"
+      },
+      "ocado": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sku": "78922011"
+      },
+      "iceland": {
+        "0": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "sku": "22919"
+      },
+      "waitrose": {
+        "0": {
+          "price": 155,
+          "unit_price": 68,
+          "unit_measure": "litre"
+        },
+        "sku": "053457"
+      },
+      "aldi": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sku": "4088600003788"
+      }
+    }
+  },
+  {
+    "simplified": {
+      "sku_id": "254656399",
+      "sku_ids": ["254656399", "181402", "22918", "053404", "4088600003900"],
+      "name": "Tesco British Whole Milk 2.272L, 4 Pints",
+      "brand": "Tesco",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/1a509774-8592-41df-ace1-bbe2eb893954/4d991179-f47d-48f9-83c0-71e15889aa87.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "ltr"
+        },
+        "iceland": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 155,
+          "unit_price": 68,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 90,
+          "unit_price": 158,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "0": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "litre"
+        },
+        "sku": "254656399"
+      },
+      "sainsburys": {
+        "0": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "ltr"
+        },
+        "sku": "181402"
+      },
+      "iceland": {
+        "0": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "sku": "22918"
+      },
+      "waitrose": {
+        "0": {
+          "price": 155,
+          "unit_price": 68,
+          "unit_measure": "litre"
+        },
+        "sku": "053404"
+      },
+      "aldi": {
+        "0": {
+          "price": 90,
+          "unit_price": 158,
+          "unit_measure": "litre"
+        },
+        "sku": "4088600003900"
+      }
+    }
+  },
+  {
+    "simplified": {
+      "sku_id": "252207537",
+      "sku_ids": [
+        "252207537",
+        "1137637",
+        "1000204779000",
+        "113511011",
+        "78922011",
+        "22919",
+        "053448",
+        "4088600003788"
+      ],
+      "name": "Tesco British Semi Skimmed Milk 1.13L, 2 Pints",
+      "brand": "Tesco",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/de8b19af-6b47-4c60-a1cf-19e3623c5e30/f2992ba8-00b6-43c4-9c33-6a8235ef63d0.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "ltr"
+        },
+        "asda": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        },
+        "morrisons": {
+          "price": 135,
+          "unit_price": 135,
+          "unit_measure": "litre"
+        },
+        "ocado": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "iceland": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 125,
+          "unit_price": 111,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sku": "252207537"
+      },
+      "sainsburys": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "ltr"
+        },
+        "sku": "1137637"
+      },
+      "asda": {
+        "0": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        },
+        "sku": "1000204779000"
+      },
+      "morrisons": {
+        "0": {
+          "price": 135,
+          "unit_price": 135,
+          "unit_measure": "litre"
+        },
+        "sku": "113511011"
+      },
+      "ocado": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sku": "78922011"
+      },
+      "iceland": {
+        "0": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "sku": "22919"
+      },
+      "waitrose": {
+        "0": {
+          "price": 125,
+          "unit_price": 111,
+          "unit_measure": "litre"
+        },
+        "sku": "053448"
+      },
+      "aldi": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sku": "4088600003788"
+      }
+    }
+  },
+  {
+    "simplified": {
+      "sku_id": "254278040",
+      "sku_ids": [
+        "254278040",
+        "1137637",
+        "910000392586",
+        "318143011",
+        "78922011",
+        "22919",
+        "053447",
+        "4088600003825"
+      ],
+      "name": "Tesco British Semi Skimmed Longlife Uht Milk 1 Litre",
+      "brand": "Tesco",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/9a0cf276-73e0-4f60-9440-16e0f906338a/6a6314ae-7cae-4f56-a6ea-38270be4a5f0.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 120,
+          "unit_price": 120,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "ltr"
+        },
+        "asda": {
+          "price": 585,
+          "unit_price": 98,
+          "unit_measure": "lt"
+        },
+        "morrisons": {
+          "price": 250,
+          "unit_price": 125,
+          "unit_measure": "litre"
+        },
+        "ocado": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "iceland": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 95,
+          "unit_price": 168,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 90,
+          "unit_price": 158,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "0": {
+          "price": 120,
+          "unit_price": 120,
+          "unit_measure": "litre"
+        },
+        "sku": "254278040"
+      },
+      "sainsburys": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "ltr"
+        },
+        "sku": "1137637"
+      },
+      "asda": {
+        "0": {
+          "price": 585,
+          "unit_price": 98,
+          "unit_measure": "lt"
+        },
+        "sku": "910000392586"
+      },
+      "morrisons": {
+        "0": {
+          "price": 250,
+          "unit_price": 125,
+          "unit_measure": "litre"
+        },
+        "sku": "318143011"
+      },
+      "ocado": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sku": "78922011"
+      },
+      "iceland": {
+        "0": {
+          "price": 145,
+          "unit_price": 64,
+          "unit_measure": "1 litre"
+        },
+        "sku": "22919"
+      },
+      "waitrose": {
+        "0": {
+          "price": 95,
+          "unit_price": 168,
+          "unit_measure": "litre"
+        },
+        "sku": "053447"
+      },
+      "aldi": {
+        "0": {
+          "price": 90,
+          "unit_price": 158,
+          "unit_measure": "litre"
+        },
+        "sku": "4088600003825"
+      }
+    }
+  },
+  {
+    "simplified": {
+      "sku_id": "257264875",
+      "sku_ids": [
+        "257264875",
+        "3216620",
+        "484291",
+        "110038011",
+        "78922011",
+        "32024",
+        "053448",
+        "4088600003788"
+      ],
+      "name": "Cravendale Semi Skimmed Milk 2 Litre",
+      "brand": "Cravendale",
+      "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/21338f7a-87a4-4e1b-b0b7-0c39fa2367c4/59bd2719-aea2-4eb8-aae2-c6433f10aa13.jpeg?h=225&w=225",
+      "price_info": {
+        "tesco": {
+          "price": 240,
+          "unit_price": 120,
+          "unit_measure": "litre"
+        },
+        "sainsburys": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "ltr"
+        },
+        "asda": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        },
+        "morrisons": {
+          "price": 255,
+          "unit_price": 128,
+          "unit_measure": "litre"
+        },
+        "ocado": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "iceland": {
+          "price": 165,
+          "unit_price": 83,
+          "unit_measure": "1 litre"
+        },
+        "waitrose": {
+          "price": 125,
+          "unit_price": 111,
+          "unit_measure": "litre"
+        },
+        "aldi": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        }
+      }
+    },
+    "complete": {
+      "tesco": {
+        "0": {
+          "price": 240,
+          "unit_price": 120,
+          "unit_measure": "litre"
+        },
+        "sku": "257264875"
+      },
+      "sainsburys": {
+        "0": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "ltr"
+        },
+        "sku": "3216620"
+      },
+      "asda": {
+        "0": {
+          "price": 230,
+          "unit_price": 115,
+          "unit_measure": "lt"
+        },
+        "sku": "484291"
+      },
+      "morrisons": {
+        "0": {
+          "price": 255,
+          "unit_price": 128,
+          "unit_measure": "litre"
+        },
+        "sku": "110038011"
+      },
+      "ocado": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sku": "78922011"
+      },
+      "iceland": {
+        "0": {
+          "price": 165,
+          "unit_price": 83,
+          "unit_measure": "1 litre"
+        },
+        "sku": "32024"
+      },
+      "waitrose": {
+        "0": {
+          "price": 125,
+          "unit_price": 111,
+          "unit_measure": "litre"
+        },
+        "sku": "053448"
+      },
+      "aldi": {
+        "0": {
+          "price": 120,
+          "unit_price": 106,
+          "unit_measure": "litre"
+        },
+        "sku": "4088600003788"
+      }
+    }
+  }
+]

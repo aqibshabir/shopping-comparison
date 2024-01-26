@@ -1,0 +1,141 @@
+.productInfo {
+  position: relative;
+  margin-left: 18px;
+  margin-top: 18px;
+  margin-right: 18px;
+
+  .productImage {
+    width: 300px;
+    margin-bottom: 10px;
+    border-color: #333;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+
+  .productName {
+    font-weight: 600;
+    margin-bottom: 14px;
+    display: none;
+  }
+
+  .productNameMobile {
+    font-weight: 600;
+    margin-bottom: 14px;
+    display: inline;
+  }
+
+  .productText {
+    margin-top: 16px;
+
+    .pricing {
+      margin-bottom: 10px;
+      font-size: medium;
+
+      .Asda {
+        color: #78be20;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .Tesco {
+        color: #ee1c2e;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .Waitrose {
+        color: #2b620b;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .Sainsburys {
+        color: #ec8a00;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .Morrisons {
+        color: #00563f;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .Iceland {
+        color: #d2212e;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .Ocado {
+        color: #4d216d;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .Aldi {
+        color: #1fc4f4;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .price-value {
+        font-size: medium;
+        color: black;
+        font-weight: 400;
+      }
+    }
+  }
+  .category,
+  .brand {
+    font-weight: 300;
+    font-size: medium;
+  }
+
+  .productDescription {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: medium;
+  }
+  @media (min-width: 610px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    // gap: 20px; // Adjust as needed for spacing
+    margin: 18px;
+    .productName {
+      display: inline;
+    }
+
+    .productNameMobile {
+      display: none;
+    }
+  }
+
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .productImage {
+    width: 300px; // or your desired width
+    margin-bottom: 10px;
+    border-color: #333;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .productName {
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+}
