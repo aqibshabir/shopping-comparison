@@ -4,6 +4,7 @@ import "./SearchBarResults.scss";
 import { formatPriceInPounds } from "../../utils/currencyUtils";
 import { findLowest } from "../../utils/sortSearchResults";
 import { capitaliseFirstLetter } from "../../utils/capitaliseFirstLetter";
+import { AiFillPoundCircle } from "react-icons/ai";
 
 function SearchResults({ searchResults }) {
   const navigate = useNavigate();
@@ -44,15 +45,22 @@ function SearchResults({ searchResults }) {
             onClick={() => handleResultClick(product.simplified.sku_id)}
             className="search-result"
           >
-            <p className="search-result-name">{product.simplified.name}</p>
-            <img
-              src={imageUrl}
-              alt={product.simplified.name}
-              className="search-result-image"
-            />
-            <div className="text-results">
-              <p className="brand">{product.simplified.brand}</p>
-              <div>
+            <div className="image-container">
+              <img
+                src={imageUrl}
+                alt={product.simplified.name}
+                className="search-result-image"
+              />
+            </div>
+
+            <div className="title-price">
+              <div className="title-container">
+                <p className="search-result-name">{product.simplified.name}</p>
+                <div className="text-results">
+                  <p className="brand">{product.simplified.brand}</p>
+                </div>
+              </div>
+              <div className="product-container">
                 {newPrices.map((price) => {
                   const standardizedUnitMeasure =
                     price.unit_measure &&
@@ -66,7 +74,9 @@ function SearchResults({ searchResults }) {
                   return (
                     <p
                       key={price.name}
-                      className={`${capitaliseFirstLetter(price.name)} ${
+                      className={`container-price ${capitaliseFirstLetter(
+                        price.name
+                      )} ${
                         price.unit_price === lowest ? "lowest" : "not-lowest"
                       }`}
                     >
@@ -78,7 +88,7 @@ function SearchResults({ searchResults }) {
                         (£{unitPriceInPounds}/{standardizedUnitMeasure})
                       </span>
                       {price.unit_price === lowest && (
-                        <span className="best-price"> Best Price</span>
+                        <AiFillPoundCircle className="pound-sign" />
                       )}
                     </p>
                   );

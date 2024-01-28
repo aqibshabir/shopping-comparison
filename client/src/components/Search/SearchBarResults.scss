@@ -42,8 +42,7 @@
 .sortBox {
   position: relative;
   max-width: 400px;
-  margin-left: 10px;
-  margin-bottom: 20px;
+  margin-left: 30px;
   font-size: smaller;
   border: 1px solid rgba(0, 0, 0, 0.204);
   background-color: white;
@@ -52,100 +51,59 @@
 //Search Results
 
 .search-result {
+  box-shadow: 2px 2px 10px rgb(196, 196, 196);
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border-radius: 20px;
-  border-color: rgba(180, 180, 180, 0.503);
-  border-style: solid;
+  border-color: none;
   border-width: 3px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
+  margin: 30px;
   background-color: #ffffff;
+  cursor: pointer;
 
   .search-result-image {
-    width: 200px;
-    margin-top: 10px;
+    width: 220px;
+    margin: 10px;
+  }
+  .image-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
   }
 
   .search-result-name {
-    text-align: center;
-    font-weight: 900;
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 18px;
     margin-bottom: 10px;
     margin-top: 10px;
     color: rgb(3, 1, 122);
-    text-decoration: underline;
-  }
-
-  .text-results {
-    padding-left: 10px;
   }
 
   .brand {
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
     width: fit-content;
-    font-size: smaller;
+    font-size: 12px;
     font-weight: 500;
-    background: rgb(226, 226, 226);
-    color: rgb(0, 0, 0);
+    background: rgb(25, 33, 141);
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
   }
 
   .store-name {
     padding-bottom: 1px;
     border-bottom: 1;
-  }
-
-  .Asda {
-    color: #78be20;
-    font-weight: 500;
-    font-size: medium;
-  }
-
-  .Tesco {
-    color: #ee1c2e;
-    font-weight: 500;
-    font-size: medium;
-  }
-
-  .Waitrose {
-    color: #2b620b;
-    font-weight: 500;
-    font-size: medium;
-  }
-
-  .Sainsburys {
-    color: #ec8a00;
-    font-weight: 500;
-    font-size: medium;
-  }
-
-  .Morrisons {
-    color: #00563f;
-    font-weight: 500;
-    font-size: medium;
-  }
-
-  .Iceland {
-    color: #d2212e;
-    font-weight: 500;
-    font-size: medium;
-  }
-
-  .Ocado {
-    color: #4d216d;
-    font-weight: 500;
-    font-size: medium;
-  }
-
-  .Aldi {
-    color: #1fc4f4;
-    font-weight: 500;
-    font-size: medium;
   }
 }
 
@@ -155,33 +113,29 @@
 }
 
 .unit-price-measure {
-  font-size: small;
+  font-size: 10px;
   color: grey;
   font-weight: 400;
 }
 
 .store-name {
-  font-size: medium;
+  font-size: 20px;
 }
 
 .store-price {
-  font-size: medium;
-  color: black;
+  font-size: 16px;
+  background: rgb(241, 241, 241);
+  padding: 5px 10px 5px 10px;
+  border-radius: 25px;
   font-weight: 400;
 }
+.container-price {
+  margin-bottom: 10px;
+}
 
-.best-price {
-  color: black;
-  display: inline-block;
-  font-size: smaller;
-  border-radius: 4px;
-  padding-top: 0px;
-  margin-left: 4px;
-  padding-right: 4px;
-  border-color: rgb(50, 159, 33);
-  border-style: solid;
-  border-width: 3px;
-  background-color: rgb(193, 226, 194);
+.pound-sign {
+  color: #1d27b6;
+  margin-left: 2px;
 }
 
 // Initially hide the unit price measure
@@ -189,7 +143,7 @@
   display: none;
 }
 
-// Media query for screens wider than 532px
+// Media query for screens wider than 600px
 @media (min-width: 600px) {
   .unit-price-measure {
     display: inline;
@@ -199,6 +153,124 @@
 @media (min-width: 600px) {
   .search-result {
     flex-direction: row;
+    justify-content: space-between;
+
+    .search-result-image {
+      width: 150px;
+      align-self: start;
+      margin-right: 20px;
+    }
+
+    .title-container {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+    }
+
+    .search-result-name {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      color: rgb(3, 1, 122);
+    }
+
+    .brand {
+      padding: 5px 10px 5px 10px;
+      margin-top: 10px;
+      margin-left: 20px;
+      width: fit-content;
+      font-size: 12px;
+      font-weight: 500;
+      background: rgb(25, 33, 141);
+      border-radius: 25px;
+      color: rgb(255, 255, 255);
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .container-price {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding-right: 10px;
+    }
+
+    .store-name {
+      font-size: 15px;
+    }
+
+    .store-price {
+      font-size: 12px;
+      background: rgb(241, 241, 241);
+      padding: 5px 10px 5px 10px;
+      border-radius: 25px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .search-result {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .search-result-image {
+      width: 150px;
+      align-self: start;
+      margin-right: 20px;
+    }
+
+    .title-container {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+    }
+
+    .search-result-name {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      color: rgb(3, 1, 122);
+    }
+
+    .brand {
+      padding: 5px 10px 5px 10px;
+      margin-top: 10px;
+      margin-left: 20px;
+      width: fit-content;
+      font-size: 12px;
+      font-weight: 500;
+      background: rgb(25, 33, 141);
+      border-radius: 25px;
+      color: rgb(255, 255, 255);
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .container-price {
+      margin-right: 20px;
+      padding-right: 20px;
+      border-right: 1px solid rgba(0, 0, 0, 0.144);
+    }
+
+    .store-name {
+      font-size: 20px;
+    }
+
+    .store-price {
+      font-size: 16px;
+      background: rgb(241, 241, 241);
+      padding: 5px 10px 5px 10px;
+      border-radius: 25px;
+      font-weight: 400;
+    }
   }
 }
 
@@ -207,8 +279,7 @@
 }
 
 .label {
-    display: flex;
-    position: relative;
-    margin-bottom: 2rem;
-  }
-
+  display: flex;
+  position: relative;
+  margin-bottom: 2rem;
+}

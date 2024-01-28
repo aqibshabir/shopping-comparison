@@ -43,7 +43,7 @@
   width: 24px;
   height: 24px;
   border-radius: 5px;
-  color: black;
+  color: rgb(177, 177, 177);
   background-color: white;
   padding: 5px;
   font-size: 20px;
@@ -54,9 +54,8 @@
   }
 }
 .camera-button:hover {
-  color: rgb(129, 128, 128);
+  color: black;
 }
-
 
 @media (min-width: 600px) {
   .camera-container {

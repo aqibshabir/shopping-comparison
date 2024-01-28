@@ -11,7 +11,11 @@ function ScannerButton({ cameraActive, setCameraActive }) {
         setCameraActive(!cameraActive);
       }}
     >
-      {cameraActive ? <IoClose /> : <FaBarcode />}
+      {cameraActive ? (
+        <IoClose title="Close Scanner" />
+      ) : (
+        <FaBarcode title="Scan Barcode" />
+      )}
     </div>
   );
 }

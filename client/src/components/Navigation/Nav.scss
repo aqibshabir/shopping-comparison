@@ -1,10 +1,8 @@
 // NAV BAR
 nav {
-  width: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
   background-color: rgb(30, 23, 126);
   height: 40px;
   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.726);
@@ -59,11 +57,11 @@ nav {
   .nav-links {
     box-shadow: 0 1px 3px black;
     opacity: 0;
+    visibility: hidden;
     transition: opacity 0.2s ease-in-out;
     padding: 20px;
     text-align: center;
-    width: 100vw;
-    text-wrap: nowrap;
+    width: 98vw;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     z-index: 1;
@@ -71,7 +69,6 @@ nav {
     display: flex;
     flex-direction: column;
     right: 0px;
-    top: -999px;
     background-color: rgba(21, 16, 88, 1);
     .nav-links-links {
       margin-bottom: 10px;
@@ -90,15 +87,15 @@ nav {
     > button.logout {
       color: rgb(255, 255, 255);
       border: none;
-      padding: 3px 6px 2px 6px;
+      padding: 2px 6px 2px 6px;
     }
   }
   .nav-links-show {
     opacity: 1;
+    visibility: visible;
     top: calc(100% + 4.8px);
   }
 }
-
 
 @media screen and (min-width: 600px) {
   .nav-menu {
