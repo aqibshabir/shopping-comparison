@@ -21,11 +21,11 @@
     height: min-content;
     background-color: rgb(30, 23, 126);
     border: none;
-    padding: 2px 8px 2px 8px;
+    padding: 0px 5px 0px 5px;
     color: white;
     margin-left: 10px;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   @media (min-width: 600px) {
@@ -84,7 +84,7 @@
 
   .search-result-name {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 10px;
     margin-top: 10px;
     color: rgb(3, 1, 122);
@@ -121,8 +121,8 @@
 }
 
 .lowest {
-  // padding: 4px;
-  font-weight: 500;
+  font-weight: 600;
+  color: rgb(3, 1, 122);
 }
 
 .unit-price-measure {
@@ -138,6 +138,7 @@
 .store-price {
   font-size: 16px;
   background: rgb(241, 241, 241);
+  color: black;
   padding: 5px 10px 5px 10px;
   border-radius: 25px;
   font-weight: 500;
@@ -253,7 +254,7 @@
 
     .search-result-name {
       font-weight: 600;
-      font-size: 20px;
+      font-size: 30px;
       margin-bottom: 10px;
       margin-top: 10px;
       color: rgb(3, 1, 122);

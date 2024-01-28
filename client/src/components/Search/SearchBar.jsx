@@ -10,7 +10,7 @@ import Spinner from "../Spinner";
 import "./SearchBarResults.scss";
 import SearchResults from "./SearchResults";
 import SearchResultsSort from "./SortDisplay";
-import { IoMdSearch } from "react-icons/io";
+import { CiSearch } from "react-icons/ci";
 
 function SearchBar() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -84,7 +84,7 @@ function SearchBar() {
             />
           </label>
           <button className="searchButton" type="submit">
-            <IoMdSearch className="search-icon" />
+            <CiSearch className="search-icon" />
           </button>
         </div>
         {/* Scanner button */}

@@ -4,7 +4,7 @@ import "./SearchBarResults.scss";
 import { formatPriceInPounds } from "../../utils/currencyUtils";
 import { findLowest } from "../../utils/sortSearchResults";
 import { capitaliseFirstLetter } from "../../utils/capitaliseFirstLetter";
-import { AiOutlinePound } from "react-icons/ai";
+import { BiSolidBadgeDollar } from "react-icons/bi";
 
 function SearchResults({ searchResults }) {
   const navigate = useNavigate();
@@ -78,7 +78,7 @@ function SearchResults({ searchResults }) {
                       <span className="store-price">
                         £{price.price}
                         {price.unit_price === lowest && (
-                          <AiOutlinePound className="pound-sign" />
+                          <BiSolidBadgeDollar className="pound-sign" />
                         )}
                       </span>{" "}
                       <span className="unit-price-measure">
