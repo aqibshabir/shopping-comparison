@@ -6,6 +6,22 @@
   padding: 15px;
 }
 
+.login {
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 3px var(--button-shadow-color);
+  background-color: var(--color-palette-1);
+  color: white;
+  font-size: large;
+}
+
+.forgotPassword {
+  margin-top: 10px;
+  font-size: small;
+  color: black;
+}
+
 .user-form {
   display: flex;
   flex-direction: column;
@@ -60,50 +76,91 @@
   border-radius: 10px;
 }
 
-.tesco {
-  font-weight: 500;
-  color: #ee1c2e;
-}
-.asda {
-  font-weight: 600;
-  color: #78be20;
-}
-.sainsburys {
-  color: #ec8a00;
-  font-weight: 500;
-}
-.morrisons {
-  color: #00563f;
-  font-weight: 500;
-}
-.waitrose {
-  color: #7bb135;
-  font-weight: 500;
-}
-.iceland {
-  color: #d2212e;
-  font-weight: 500;
-}
-.ocado {
-  color: #4d216d;
-  font-weight: 600;
-}
-.aldi {
-  color: #1fc4f4;
-  font-weight: 500;
+
+.trolley-container {
+  display: flex;
+  justify-content: center;
 }
 
-#loyalty-head {
-  margin-top: 40px;
-  background-color: #00563f;
-  font-size: 1.2em;
+.trolley-login {
+  font-size: 200px;
+  color: rgb(30, 23, 126);
+  margin-bottom: 20px;
+}
+
+.input-email  {
+  margin-bottom: 20px;
+  border: 2px solid rgba(195, 195, 195, 0.278);
+  font-size: medium;
+}
+
+.input-password {
+  margin-bottom: 20px;
+  border: 2px solid rgba(195, 195, 195, 0.278);
+  font-size: medium;
+}
+
+.input-create-email {
+  margin-bottom: 20px;
+  border: 2px solid rgba(195, 195, 195, 0.278);
+  font-size: medium;
+}
+
+.input-create-password {
+  margin-bottom: 20px;
+  border: 2px solid rgba(195, 195, 195, 0.278);
+  font-size: medium;
+}
+
+.input-confirm-password {
+  margin-bottom: 20px;
+  border: 2px solid rgba(195, 195, 195, 0.278);
+  font-size: medium;
+}
+
+.user-icon {
+  margin-bottom: 60px;
+  font-size: 200px;
+  color: var(--color-palette-1);
+}
+
+.user-container {
+  display: flex;
+  justify-content: center;
+}
+
+.forgot-password {
+  margin-bottom: 20px;
+  border: 2px solid rgba(195, 195, 195, 0.278);
+  font-size: medium;
+}
+
+.container-forgot-password {
+  display: flex;
+  justify-content: center;
+}
+
+.emailpassword {
   padding: 5px 15px 5px 15px;
   border-radius: 10px;
-  border: 2px solid black;
-  color: var(--text-color-dark);
-  color: rgb(244, 244, 244);
+  border: none;
+  box-shadow: 0 0 3px var(--button-shadow-color);
+  background-color: var(--color-palette-1);
+  color: white;
+  font-size: large;
 }
 
-.login-logo {
-  margin-top: 20px;
+.password-reset-icon {
+  font-size: 200px;
+  margin-bottom: 40px;
+  color: var(--color-palette-1);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-icon {
+  margin-left: 10px;
 }

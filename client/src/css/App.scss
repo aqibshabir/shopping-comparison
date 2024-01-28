@@ -12,9 +12,9 @@
 
   /* Base color palette */
   /* Try different ones here: https://color.adobe.com/search */
-  --color-palette-1: #48bdff;
+  --color-palette-1: #231c87;
   --color-palette-2: #ff473b;
-  --color-palette-3: #8f36e8;
+  --color-palette-3: #ffffff;
   --color-palette-4: #ffeb00;
   --color-palette-5: #36e856;
 
@@ -99,15 +99,17 @@ button:hover {
 }
 
 .userButtons .createUser {
-  font: inherit;
-  font-size: 1.2em;
   padding: 5px 15px 5px 15px;
   border-radius: 10px;
-  border: 2px solid black;
-  color: var(--text-color-dark);
+  border: none;
   box-shadow: 0 0 3px var(--button-shadow-color);
   background-color: var(--color-palette-1);
-  color: var(--text-color-dark);
+  color: white;
+  font-size: large;
+}
+
+.userButtons:hover .createUser:hover {
+  text-decoration: none;
 }
 
 /* LINKS */

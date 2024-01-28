@@ -9,12 +9,12 @@ import {
 } from "../../redux/userSlice";
 // import Joi from "joi";
 // import { userSchema } from "../../utils/joiUtils";
-import SVG from "../Logos/SVG";
 import animateText from "./Animation";
 // import sha256 from "sha256";
 import { setContent } from "../../redux/messageSlice";
 import axios from "axios";
 import { apiURL } from "../../config";
+import { FaCartShopping } from "react-icons/fa6";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -63,8 +63,8 @@ const Login = () => {
 
   return (
     <>
-      <div className="login-logo">
-        <SVG ref1={ref1} ref2={ref2} ref3={ref3} />
+      <div className="trolley-container">
+        <FaCartShopping className="trolley-login" />
       </div>
 
       {validationError && (
@@ -80,22 +80,23 @@ const Login = () => {
 
             <form>
               <div className="login-form">
-                <label htmlFor="email">Email:</label>
                 <input
                   type="text"
+                  placeholder="email"
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   autoComplete="email"
+                  className="input-email"
                 />
-
-                <label htmlFor="password">Password:</label>
                 <input
                   type="password"
                   id="password"
+                  placeholder="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   autoComplete="current-password"
+                  className="input-password"
                 />
               </div>
             </form>

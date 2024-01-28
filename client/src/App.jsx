@@ -20,6 +20,7 @@ import { selectContent, setContent } from "./redux/messageSlice";
 import ShoppingList from "./components/ShoppingList/List/ShoppingList";
 import ShoppingLists from "./components/ShoppingList/Lists/ShoppingLists";
 import { apiURL } from "./config";
+import { FaUser } from "react-icons/fa";
 
 export default function App() {
   const location = useLocation();
@@ -50,7 +51,13 @@ export default function App() {
 
         {!isLoggedIn ? (
           <>
-            <nav>{location.pathname !== "/" && <Link to="/">Login</Link>}</nav>
+            <nav>
+              {location.pathname !== "/" && (
+                <Link to="/">
+                  <FaUser className="nav-icon" />
+                </Link>
+              )}
+            </nav>
           </>
         ) : (
           <>

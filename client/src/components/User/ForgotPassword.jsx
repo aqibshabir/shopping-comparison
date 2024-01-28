@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MdOutlinePassword } from "react-icons/md";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
@@ -9,14 +10,20 @@ const ForgotPassword = () => {
 
   return (
     <>
-      <label htmlFor="email">Email address:</label>
-      <input
-        type="text"
-        id="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        autoComplete="email"
-      />
+      <div className="icon-container">
+        <MdOutlinePassword className="password-reset-icon" />
+      </div>
+      <div className="container-forgot-password">
+        <input
+          type="text"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          autoComplete="email"
+          placeholder="enter email address..."
+          className="forgot-password"
+        />
+      </div>
 
       <div className="userButtons">
         <button

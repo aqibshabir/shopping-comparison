@@ -10,7 +10,7 @@ import Spinner from "../Spinner";
 import "./SearchBarResults.scss";
 import SearchResults from "./SearchResults";
 import SearchResultsSort from "./SortDisplay";
-import { CiSearch } from "react-icons/ci";
+import { IoMdSearch } from "react-icons/io";
 
 function SearchBar() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -68,25 +68,26 @@ function SearchBar() {
     <div className="container">
       <form onSubmit={handleSearch}>
         <div className="search">
-          <input
-            className="searchBox"
-            type="text"
-            value={search}
-            onChange={(e) => {
-              setSearch(e.target.value);
-            }}
-          />
+          <label className="label" htmlFor="">
+            <input
+              className="searchBox"
+              type="text"
+              value={search}
+              onChange={(e) => {
+                setSearch(e.target.value);
+              }}
+            />
+            <ScannerButton
+              className="scannerButton"
+              cameraActive={cameraActive}
+              setCameraActive={setCameraActive}
+            />
+          </label>
           <button className="searchButton" type="submit">
-            <CiSearch />
+            <IoMdSearch className="search-icon" />
           </button>
-
-          {/* Scanner button */}
-          <ScannerButton
-            className="scannerButton"
-            cameraActive={cameraActive}
-            setCameraActive={setCameraActive}
-          />
         </div>
+        {/* Scanner button */}
       </form>
 
       {/* Camera container */}

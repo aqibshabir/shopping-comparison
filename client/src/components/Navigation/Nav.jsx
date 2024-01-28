@@ -8,10 +8,6 @@ import { FaCartShopping } from "react-icons/fa6";
 
 const Nav = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
-  const location = useLocation();
-  const ref1 = useRef();
-  const ref2 = useRef();
-  const ref3 = useRef();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const refHamburger = useRef(null);

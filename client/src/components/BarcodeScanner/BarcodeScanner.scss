@@ -37,22 +37,26 @@
 }
 
 .camera-button {
-  display: flex;
-  border-radius: 20%;
-  background-color: rgb(30, 23, 126);
-  color: white;
-  padding: 8px 10px 8px 10px;
-  font-size: 25px;
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  font-size: 20px;
   cursor: pointer;
   .svg {
     display: block;
     width: 50px;
   }
 }
-
 .camera-button:hover {
-  background-color: rgba(30, 23, 126, 0.719);
+  color: rgb(129, 128, 128);
 }
+
 
 @media (min-width: 600px) {
   .camera-container {

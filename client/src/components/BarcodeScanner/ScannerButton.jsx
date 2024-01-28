@@ -1,5 +1,5 @@
 import React from "react";
-import { BsUpcScan } from "react-icons/bs";
+import { FaBarcode } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
 function ScannerButton({ cameraActive, setCameraActive }) {
@@ -11,7 +11,7 @@ function ScannerButton({ cameraActive, setCameraActive }) {
         setCameraActive(!cameraActive);
       }}
     >
-      {cameraActive ? <IoClose /> : <BsUpcScan />}
+      {cameraActive ? <IoClose /> : <FaBarcode />}
     </div>
   );
 }
