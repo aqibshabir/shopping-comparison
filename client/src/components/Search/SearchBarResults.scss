@@ -60,7 +60,6 @@
   border-width: 3px;
   margin: 30px;
   background-color: #ffffff;
-  cursor: pointer;
 
   .search-result-image {
     width: 220px;
@@ -80,7 +79,7 @@
   .title-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .search-result-name {
@@ -91,14 +90,28 @@
     color: rgb(3, 1, 122);
   }
 
+  .search-result-name:hover {
+    color: rgb(82, 80, 199);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   .brand {
     padding: 5px 10px 5px 10px;
-    width: fit-content;
+    width: max-content;
     font-size: 12px;
     font-weight: 500;
-    background: rgb(25, 33, 141);
+    background: rgb(53, 53, 53);
     border-radius: 25px;
     color: rgb(255, 255, 255);
+  }
+
+  .container-price {
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(143, 143, 143, 0.144);
   }
 
   .store-name {
@@ -127,15 +140,12 @@
   background: rgb(241, 241, 241);
   padding: 5px 10px 5px 10px;
   border-radius: 25px;
-  font-weight: 400;
-}
-.container-price {
-  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .pound-sign {
-  color: #1d27b6;
-  margin-left: 2px;
+  color: rgb(3, 1, 122);
+  margin-left: 4px;
 }
 
 // Initially hide the unit price measure
@@ -154,6 +164,11 @@
   .search-result {
     flex-direction: row;
     justify-content: start;
+
+    .container-price {
+      display: block;
+      border-bottom: none;
+    }
 
     .search-result-image {
       width: 150px;
@@ -179,10 +194,10 @@
       padding: 5px 10px 5px 10px;
       margin-top: 10px;
       margin-left: 20px;
-      width: fit-content;
+      width: max-content;
       font-size: 12px;
       font-weight: 500;
-      background: rgb(25, 33, 141);
+      background: rgb(53, 53, 53);
       border-radius: 25px;
       color: rgb(255, 255, 255);
     }
@@ -217,6 +232,11 @@
     flex-direction: row;
     justify-content: start;
 
+    .container-price {
+      display: block;
+      border-bottom: none;
+    }
+
     .search-result-image {
       width: 200px;
       align-self: start;
@@ -243,10 +263,10 @@
       padding: 5px 10px 5px 10px;
       margin-top: 10px;
       margin-left: 20px;
-      width: fit-content;
+      width: max-content;
       font-size: 12px;
       font-weight: 500;
-      background: rgb(25, 33, 141);
+      background: rgb(53, 53, 53);
       border-radius: 25px;
       color: rgb(255, 255, 255);
     }
@@ -260,6 +280,7 @@
       margin-right: 20px;
       padding-right: 20px;
       border-right: 1px solid rgba(0, 0, 0, 0.144);
+      line-height: 3rem;
     }
 
     .store-name {
@@ -284,4 +305,20 @@
   display: flex;
   position: relative;
   margin-bottom: 2rem;
+}
+
+.product-button {
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 9px 10px 9px 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: full;
+  margin-top: 25px;
 }

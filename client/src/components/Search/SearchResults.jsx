@@ -4,7 +4,7 @@ import "./SearchBarResults.scss";
 import { formatPriceInPounds } from "../../utils/currencyUtils";
 import { findLowest } from "../../utils/sortSearchResults";
 import { capitaliseFirstLetter } from "../../utils/capitaliseFirstLetter";
-import { AiFillPoundCircle } from "react-icons/ai";
+import { AiOutlinePound } from "react-icons/ai";
 
 function SearchResults({ searchResults }) {
   const navigate = useNavigate();
@@ -18,16 +18,7 @@ function SearchResults({ searchResults }) {
         const lowest = findLowest(product.simplified.price_info);
 
         const imageUrl = `${product.simplified.image}`;
-        const {
-          asda,
-          tesco,
-          morrisons,
-          waitrose,
-          sainsburys,
-          iceland,
-          aldi,
-          ocado,
-        } = product.simplified.price_info;
+
         const newPrices = [];
         for (const key in product.simplified.price_info) {
           const copy = { ...product.simplified.price_info[key] };
@@ -40,11 +31,7 @@ function SearchResults({ searchResults }) {
         }
 
         return (
-          <div
-            key={product.simplified.sku_id}
-            onClick={() => handleResultClick(product.simplified.sku_id)}
-            className="search-result"
-          >
+          <div key={product.simplified.sku_id} className="search-result">
             <div className="image-container">
               <img
                 src={imageUrl}
@@ -55,7 +42,12 @@ function SearchResults({ searchResults }) {
 
             <div className="title-price">
               <div className="title-container">
-                <p className="search-result-name">{product.simplified.name}</p>
+                <p
+                  className="search-result-name"
+                  onClick={() => handleResultClick(product.simplified.sku_id)}
+                >
+                  {product.simplified.name}
+                </p>
                 <div className="text-results">
                   <p className="brand">{product.simplified.brand}</p>
                 </div>
@@ -83,16 +75,26 @@ function SearchResults({ searchResults }) {
                       <span className="store-name">
                         {capitaliseFirstLetter(price.name)}{" "}
                       </span>
-                      <span className="store-price">£{price.price}</span>{" "}
+                      <span className="store-price">
+                        £{price.price}
+                        {price.unit_price === lowest && (
+                          <AiOutlinePound className="pound-sign" />
+                        )}
+                      </span>{" "}
                       <span className="unit-price-measure">
                         (£{unitPriceInPounds}/{standardizedUnitMeasure})
                       </span>
-                      {price.unit_price === lowest && (
-                        <AiFillPoundCircle className="pound-sign" />
-                      )}
                     </p>
                   );
                 })}
+              </div>
+              <div className="button-container">
+                <button
+                  className="product-button"
+                  onClick={() => handleResultClick(product.simplified.sku_id)}
+                >
+                  Product information
+                </button>
               </div>
             </div>
             {/* Add more details you want to display */}

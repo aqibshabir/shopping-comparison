@@ -66,7 +66,7 @@ const Nav = () => {
           <div className="nav-links-links">
             <Link to="/search">Search</Link>
             <Link to="/shopping-list">Shopping List</Link>
-            <Link to="/menu">Menu</Link>
+            <Link to="/menu">Recipe</Link>
             <Link to="/map">Map</Link>
           </div>
           <Logout className="logout-button" />
