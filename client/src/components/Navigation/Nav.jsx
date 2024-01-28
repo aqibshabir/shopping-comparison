@@ -69,7 +69,7 @@ const Nav = () => {
             <Link to="/menu">Menu</Link>
             <Link to="/map">Map</Link>
           </div>
-          <Logout />
+          <Logout className="logout-button" />
         </div>
       </div>
     </nav>

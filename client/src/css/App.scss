@@ -157,3 +157,8 @@ a:hover {
   display: flex;
   justify-content: flex-start;
 }
+
+::selection {
+  background-color: #2429bc9f;
+  color: white;
+}

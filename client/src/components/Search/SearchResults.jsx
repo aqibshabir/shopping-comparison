@@ -44,13 +44,13 @@ function SearchResults({ searchResults }) {
             onClick={() => handleResultClick(product.simplified.sku_id)}
             className="search-result"
           >
+            <p className="search-result-name">{product.simplified.name}</p>
             <img
               src={imageUrl}
               alt={product.simplified.name}
               className="search-result-image"
             />
             <div className="text-results">
-              <p className="search-result-name">{product.simplified.name}</p>
               <p className="brand">{product.simplified.brand}</p>
               <div>
                 {newPrices.map((price) => {
