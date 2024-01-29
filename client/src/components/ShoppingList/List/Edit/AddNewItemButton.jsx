@@ -5,9 +5,15 @@ import {
 } from "../../../../redux/shoppingListSlice";
 import { useEffect, useState } from "react";
 import { getSKUCountInItems } from "../../../../utils/shoppingListUtils";
-import { selectProductsInList, selectSearchTermFromSku } from "../../../../redux/dataSlice";
+import {
+  selectProductsInList,
+  selectSearchTermFromSku,
+} from "../../../../redux/dataSlice";
 import { setContent } from "../../../../redux/messageSlice";
-import { storeHasChanged, syncShoppingList } from "../../../../controllers/shoppingListController";
+import {
+  storeHasChanged,
+  syncShoppingList,
+} from "../../../../controllers/shoppingListController";
 import { store } from "../../../../redux/store";
 import "./AddNewItemButton.scss";
 
@@ -38,7 +44,12 @@ const AddNewItemButton = ({ sku_id }) => {
     if (skuQuantity === 0) {
       dispatch(setContent({ text: "Product added!", type: "success" }));
     } else {
-      dispatch(setContent({ text: `Another added, now: ${skuQuantity + 1}`, type: "success" }));
+      dispatch(
+        setContent({
+          text: `Another added, now: ${skuQuantity + 1}`,
+          type: "success",
+        })
+      );
     }
 
     dispatch(addItemToCurrentShoppingList({ sku_id, searchTerm }));
@@ -50,14 +61,14 @@ const AddNewItemButton = ({ sku_id }) => {
 
   return (
     <>
-      {
-        <p className="shoppingListNumber">
-          {skuQuantity > 0 ? skuQuantity : "0"} of these in your shopping list
-        </p>
-      }
-      <button className="button-color-1" onClick={onAddItemClick}>
+      <button className="add-button" onClick={onAddItemClick}>
         {buttonMessage || BUTTON_ADD}
       </button>
+      {
+        <p className="shoppingListNumber">
+          {skuQuantity > 0 ? skuQuantity : "0"} of these in your shopping list*
+        </p>
+      }
     </>
   );
 };

@@ -1,16 +1,9 @@
 .productInfo {
-  position: relative;
-  margin-left: 18px;
-  margin-top: 18px;
-  margin-right: 18px;
+  margin-top: 50px;
 
   .productImage {
     width: 300px;
     margin-bottom: 10px;
-    border-color: #333;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4px;
   }
 
   .productName {
@@ -20,77 +13,28 @@
   }
 
   .productNameMobile {
-    font-weight: 600;
-    margin-bottom: 14px;
-    display: inline;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 24px;
+    align-self: flex-start;
+    margin-left: 10px;
+    color: rgb(3, 1, 122);
   }
 
-  .productText {
-    margin-top: 16px;
-
-    .pricing {
-      margin-bottom: 10px;
-      font-size: medium;
-
-      .Asda {
-        color: #78be20;
-        font-weight: 500;
-        font-size: medium;
-      }
-
-      .Tesco {
-        color: #ee1c2e;
-        font-weight: 500;
-        font-size: medium;
-      }
-
-      .Waitrose {
-        color: #2b620b;
-        font-weight: 500;
-        font-size: medium;
-      }
-
-      .Sainsburys {
-        color: #ec8a00;
-        font-weight: 500;
-        font-size: medium;
-      }
-
-      .Morrisons {
-        color: #00563f;
-        font-weight: 500;
-        font-size: medium;
-      }
-
-      .Iceland {
-        color: #d2212e;
-        font-weight: 500;
-        font-size: medium;
-      }
-
-      .Ocado {
-        color: #4d216d;
-        font-weight: 500;
-        font-size: medium;
-      }
-
-      .Aldi {
-        color: #1fc4f4;
-        font-weight: 500;
-        font-size: medium;
-      }
-
-      .price-value {
-        font-size: medium;
-        color: black;
-        font-weight: 400;
-      }
-    }
+  .brandMobile {
+    padding: 5px 10px 5px 10px;
+    width: min-content;
+    font-size: 12px;
+    font-weight: 500;
+    background: rgb(53, 53, 53);
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    align-self: flex-start;
+    margin-left: 10px;
   }
-  .category,
+
   .brand {
-    font-weight: 300;
-    font-size: medium;
+    display: none;
   }
 
   .productDescription {
@@ -98,7 +42,66 @@
     font-weight: 400;
     font-size: medium;
   }
-  @media (min-width: 610px) {
+
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .right-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .supermarkets {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(250, 250, 250);
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+
+  .supermarkets:hover {
+    background-color: rgb(233, 233, 233);
+  }
+
+  .price-value {
+    font-weight: 400;
+  }
+
+  .add-button {
+    margin-top: 20px;
+    color: white;
+    width: max-content;
+    border: none;
+    align-self: center;
+    padding: 4px 20px 4px 20px;
+    font-size: 18px;
+  }
+
+  .shoppingListNumber {
+    color: rgb(3, 1, 122);
+    align-self: center;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .disclaimer {
+    color: rgb(211, 211, 211);
+    font-size: 10px;
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 600px) {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -106,36 +109,200 @@
     margin: 18px;
     .productName {
       display: inline;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 32px;
+      align-self: flex-start;
+      margin-left: 10px;
+      color: rgb(3, 1, 122);
+    }
+
+    .brand {
+      display: inline;
+      padding: 5px 10px 5px 10px;
+      width: min-content;
+      font-size: 14px;
+      font-weight: 500;
+      background: rgb(53, 53, 53);
+      border-radius: 25px;
+      color: rgb(255, 255, 255);
+      align-self: flex-start;
+      margin-left: 10px;
     }
 
     .productNameMobile {
       display: none;
     }
+    .brandMobile {
+      display: none;
+    }
+
+    .productImage {
+      margin-top: 50px;
+      width: 300px;
+    }
+
+    .right-section {
+      margin-top: 70px;
+      margin-left: 30px;
+    }
+
+    .supermarkets {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      background-color: rgb(250, 250, 250);
+      padding: 5px 15px 5px 15px;
+      border-radius: 25px;
+      font-weight: 600;
+    }
+
+    .price-value {
+      margin-top: 20px;
+    }
+
+    .pricing {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .add-button {
+      margin-top: 40px;
+      color: white;
+      width: max-content;
+      border: none;
+      align-self: end;
+      padding: 4px 20px 4px 20px;
+      font-size: 30px;
+    }
+
+    .shoppingListNumber {
+      color: rgb(3, 1, 122);
+      align-self: end;
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .disclaimer {
+      color: rgb(211, 211, 211);
+      font-size: 10px;
+      align-self: end;
+      margin-top: 10px;
+      font-size: 12px;
+    }
   }
 
-  .left-section {
+  @media (min-width: 1250px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-  }
+    justify-content: center;
+    // gap: 20px; // Adjust as needed for spacing
+    margin: 18px;
 
-  .productImage {
-    width: 300px; // or your desired width
-    margin-bottom: 10px;
-    border-color: #333;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4px;
-  }
+    .productName {
+      display: inline;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 42px;
+      align-self: flex-start;
+      margin-left: 10px;
+      color: rgb(3, 1, 122);
+    }
 
-  .right-section {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-  }
+    .brand {
+      display: inline;
+      padding: 5px 10px 5px 10px;
+      width: min-content;
+      font-size: 16px;
+      font-weight: 500;
+      background: rgb(53, 53, 53);
+      border-radius: 25px;
+      color: rgb(255, 255, 255);
+      align-self: flex-start;
+      margin-left: 10px;
+    }
 
-  .productName {
-    font-weight: 600;
-    margin-bottom: 14px;
+    .productNameMobile {
+      display: none;
+    }
+    .brandMobile {
+      display: none;
+    }
+
+    .productImage {
+      margin-top: 50px;
+      width: 350px;
+    }
+
+    .right-section {
+      margin-top: 100px;
+      margin-left: 50px;
+    }
+
+    .supermarkets {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      background-color: rgb(250, 250, 250);
+      padding: 5px 15px 5px 15px;
+      border-radius: 25px;
+      font-weight: 600;
+    }
+
+    .price-value {
+      margin-top: 20px;
+    }
+
+    .pricing {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .add-button {
+      margin-top: 40px;
+      color: white;
+      width: max-content;
+      border: none;
+      align-self: end;
+      padding: 4px 20px 4px 20px;
+      font-size: 30px;
+    }
+
+    .shoppingListNumber {
+      color: rgb(3, 1, 122);
+      align-self: end;
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .disclaimer {
+      color: rgb(211, 211, 211);
+      font-size: 10px;
+      align-self: end;
+      margin-top: 10px;
+      font-size: 12px;
+    }
   }
+}
+
+.back-anchor {
+  position: absolute;
+  font-size: 16px;
+  top: 60px;
+  left: 10px;
 }

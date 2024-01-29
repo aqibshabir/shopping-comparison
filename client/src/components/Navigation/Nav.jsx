@@ -45,8 +45,8 @@ const Nav = () => {
         <FaCartShopping
           className="trolley"
           style={{
-            height: "30px",
-            width: "30px",
+            height: "25px",
+            width: "25px",
             color: "white",
             marginLeft: "20px",
             marginTop: "5px",

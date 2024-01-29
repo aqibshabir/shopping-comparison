@@ -6,6 +6,7 @@ import { formatPriceInPounds } from "../../utils/currencyUtils";
 import AddNewItemButton from "../ShoppingList/List/Edit/AddNewItemButton";
 import { capitaliseFirstLetter } from "../../utils/capitaliseFirstLetter";
 import "./ProductInfo.scss";
+import { IoIosArrowBack } from "react-icons/io";
 
 function ProductInfoPage() {
   const { sku } = useParams();
@@ -39,34 +40,42 @@ function ProductInfoPage() {
   }
 
   return (
-    <div className="productInfo">
-      <div className="left-section">
-        <p className="productNameMobile">{name}</p>
-        <img className="productImage" src={image} alt={`Image of ${name}`} />
-        <AddNewItemButton sku_id={sku_id} className="button" />
-      </div>
-      <div className="right-section">
-        <p className="productName">{name}</p>
-        <div className="productText">
-          <div className="pricing">
-            {newPrices.map((price, index) => (
-              <p
-                key={price.name + index}
-                className={`${capitaliseFirstLetter(price.name)}`}
-              >
-                {capitaliseFirstLetter(price.name)}{" "}
-                <span className="price-value">£{price.price}</span>
-              </p>
-            ))}
-          </div>
+    <>
+      <a className="back-anchor" href="/search">
+        <IoIosArrowBack className="back-icon" /> Back to search
+      </a>
+      <div className="productInfo">
+        <div className="left-section">
+          <img className="productImage" src={image} alt={`Image of ${name}`} />
+          <p className="productNameMobile">{name}</p>
+          <p className="brandMobile">{brand}</p>
         </div>
+        <div className="right-section">
+          <p className="productName">{name}</p>
+          <p className="brand">{brand}</p>
+          <div className="productText">
+            <div className="pricing">
+              {newPrices.map((price, index) => (
+                <p
+                  key={price.name + index}
+                  className={`${capitaliseFirstLetter(
+                    price.name
+                  )} supermarkets`}
+                >
+                  {capitaliseFirstLetter(price.name)}{" "}
+                  <span className="price-value">£{price.price}</span>
+                </p>
+              ))}
+            </div>
+          </div>
 
-        <p className="category">Category: {category_name}</p>
-        <p className="brand">Brand: {brand}</p>
-        <p className="productDescription">Description: {description}</p>
+          <AddNewItemButton sku_id={sku_id} className="add-button" />
+          <p className="disclaimer">
+            * cheapest product automatically selected
+          </p>
+        </div>
       </div>
-      {/* Other product details can be added here */}
-    </div>
+    </>
   );
 }
 
