@@ -27,7 +27,7 @@ const AddNewItemButton = ({ sku_id }) => {
     };
   }, []);
 
-  const BUTTON_ADD = "Add Item";
+  const BUTTON_ADD = "Add";
   const BUTTON_ADDED = "Added!";
 
   const dispatch = useDispatch();

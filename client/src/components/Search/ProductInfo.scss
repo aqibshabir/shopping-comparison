@@ -83,8 +83,8 @@
     width: max-content;
     border: none;
     align-self: center;
-    padding: 4px 20px 4px 20px;
-    font-size: 18px;
+    padding: 6px 20px 6px 20px;
+    font-size: 16px;
   }
 
   .shoppingListNumber {
@@ -92,28 +92,33 @@
     align-self: center;
     margin-top: 10px;
     font-weight: 600;
+    font-size: 13px;
   }
 
   .disclaimer {
     color: rgb(211, 211, 211);
     font-size: 10px;
     align-self: center;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 8px;
   }
+
 
   @media (min-width: 600px) {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: start;
+justify-content: center;
     // gap: 20px; // Adjust as needed for spacing
     margin: 18px;
     .productName {
       display: inline;
       font-weight: 700;
       margin-bottom: 10px;
-      font-size: 32px;
+      font-size: 24px;
       align-self: flex-start;
-      margin-left: 10px;
+      margin-left: 20px;
       color: rgb(3, 1, 122);
     }
 
@@ -121,13 +126,13 @@
       display: inline;
       padding: 5px 10px 5px 10px;
       width: min-content;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 500;
       background: rgb(53, 53, 53);
       border-radius: 25px;
       color: rgb(255, 255, 255);
       align-self: flex-start;
-      margin-left: 10px;
+      margin-left: 20px;
     }
 
     .productNameMobile {
@@ -143,8 +148,7 @@
     }
 
     .right-section {
-      margin-top: 70px;
-      margin-left: 30px;
+      margin-top: 80px;
     }
 
     .supermarkets {
@@ -159,35 +163,38 @@
       padding: 5px 15px 5px 15px;
       border-radius: 25px;
       font-weight: 600;
+      font-size: 14px;
     }
 
     .price-value {
-      margin-top: 20px;
+      margin-top: 5px;
     }
 
     .pricing {
-      margin-top: 40px;
+      margin-top: 20px;
+      margin-left: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      width: fit-content;
     }
 
     .add-button {
-      margin-top: 40px;
+      margin-top: 20px;
       color: white;
       width: max-content;
       border: none;
       align-self: end;
-      padding: 4px 20px 4px 20px;
-      font-size: 30px;
+      padding: 6px 20px 6px 20px;
+      font-size: 20px;
     }
 
     .shoppingListNumber {
       color: rgb(3, 1, 122);
       align-self: end;
-      margin-top: 10px;
+      margin-top: 12px;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 16px;
     }
 
     .disclaimer {
@@ -195,7 +202,7 @@
       font-size: 10px;
       align-self: end;
       margin-top: 10px;
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 
@@ -243,7 +250,7 @@
     }
 
     .right-section {
-      margin-top: 100px;
+      margin-top: 80px;
       margin-left: 50px;
     }
 
@@ -252,13 +259,14 @@
       flex-direction: column;
       align-items: center;
       margin-right: 10px;
-      margin-left: 10px;
+      margin-left: 40px;
       margin-bottom: 10px;
       margin-top: 10px;
       background-color: rgb(250, 250, 250);
-      padding: 5px 15px 5px 15px;
+      padding: 5px 20px 5px 20px;
       border-radius: 25px;
       font-weight: 600;
+      font-size: 20px;
     }
 
     .price-value {
@@ -273,19 +281,21 @@
     }
 
     .add-button {
-      margin-top: 40px;
+      margin-top: 50px;
+      margin-right: 10px;
       color: white;
       width: max-content;
       border: none;
       align-self: end;
-      padding: 4px 20px 4px 20px;
+      padding: 6px 30px 6px 30px;
       font-size: 30px;
     }
 
     .shoppingListNumber {
       color: rgb(3, 1, 122);
       align-self: end;
-      margin-top: 10px;
+      margin-top: 15px;
+      margin-right: 10px;
       font-weight: 600;
       font-size: 20px;
     }
@@ -295,6 +305,7 @@
       font-size: 10px;
       align-self: end;
       margin-top: 10px;
+      margin-right: 10px;
       font-size: 12px;
     }
   }
@@ -305,4 +316,5 @@
   font-size: 16px;
   top: 60px;
   left: 10px;
+  font-weight: 600;
 }
