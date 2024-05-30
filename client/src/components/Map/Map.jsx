@@ -1,5 +1,4 @@
 import React from "react";
-import { Typography, TextField, colors } from "@mui/material";
 import Slider from "@mui/material/Slider";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
@@ -8,6 +7,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import LocationSearchingIcon from "@mui/icons-material/LocationSearching";
 import jsonData from "./retailpoints.json";
+import { CiSearch } from "react-icons/ci";
 
 class Map extends React.Component {
   constructor(props) {
@@ -115,47 +115,55 @@ class Map extends React.Component {
         }}
       >
         <div>
-          <div style={{ display: "flex" }}>
-            <TextField
+          <div
+            style={{
+              display: "flex",
+            }}
+          >
+            <input
+              className="searchInput"
+              type="text"
               label="Search"
               style={{
-                width: "200px",
+                width: "220px",
+                height: "35px",
                 fontSize: "large",
                 marginBottom: "20px",
-                borderRadius: "25%",
                 marginRight: "10px",
               }}
               onChange={(event) => {
                 this.setState({ searchText: event.target.value });
               }}
-            />
-            <Button
-              variant="contained"
+            ></input>
+            <button
+              className="searchButton"
               onClick={this.handleSearch}
               style={{
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 backgroundColor: "rgb(30, 23, 126)",
-                borderRadius: "20px",
+                borderRadius: "10px",
                 marginRight: "5px",
               }}
             >
-              <SearchIcon />
-            </Button>
-            <Button
-              variant="outlined"
+              <CiSearch className="search-icon" />
+            </button>
+            <button
+              className="favouriteButton"
               onClick={this.resetAll}
               style={{
-                width: 40,
-                height: 40,
-                borderWidth: "2.5px",
-                borderColor: "rgb(196, 196, 196)",
-                borderRadius: "20px",
-                color: "rgb(70, 69, 69)",
+                width: 35,
+                height: 35,
+                backgroundColor: "rgb(241, 241, 241)",
+                borderRadius: "10px",
+                marginRight: "5px",
               }}
             >
-              <RestartAltIcon />
-            </Button>
+              <RestartAltIcon
+                className="search-icon"
+                style={{ color: "black", fontSize: "25px" }}
+              />
+            </button>
           </div>
         </div>
         <div
@@ -168,9 +176,11 @@ class Map extends React.Component {
         >
           <Slider
             style={{
-              width: "200px",
+              width: "300px",
               color: "rgb(30, 23, 126)",
               marginLeft: "20px",
+              marginTop: "10px",
+              marginBottom: "10px",
             }}
             valueLabelDisplay="auto"
             step={0.1}
@@ -227,7 +237,6 @@ class Map extends React.Component {
                   top: "50%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
-                  zIndex: 1000,
                 }}
               >
                 <LocationSearchingIcon

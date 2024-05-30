@@ -15,12 +15,7 @@ const Menu = () => {
     data.forEach((item) => {
       item["active"] = false;
       item["clicked"] = false;
-      // console.log(data);
     });
-    // 91e18b500ded42668c02659107ee051e kierans key
-    // a074832c06c9473c8679c4aacbda8b9f;
-    // 9d2426b2b6df4b12b914f9de719ba1bc
-    // cc2762232c0b413aa1ffa70d4ed048b2
 
     dispatch(setMeals(data));
   };

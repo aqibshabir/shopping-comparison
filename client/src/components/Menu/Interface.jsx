@@ -16,8 +16,9 @@ import Favourites from "./Favorites";
 import Lists from "./Lists";
 import { ingredientSchema } from "../../utils/joiUtils";
 import { ToastContainer, toast } from "react-toastify";
-import { FaShoppingBasket } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
+import { RiShoppingCartLine } from "react-icons/ri";
+import { BiLike } from "react-icons/bi";
+import { CiSearch } from "react-icons/ci";
 
 const Interface = () => {
   const shoppingList = useSelector(selectCurrentShoppingList);
@@ -84,12 +85,12 @@ const Interface = () => {
             setUserInput(e.target.value);
           }}
           value={userInput}
-          placeholder="&#x1F50D; Enter Ingredients.."
+          placeholder=""
         ></input>
 
-        <div className="addButton">
-          <button onClick={onAdd}>Add</button>
-        </div>
+        <button className="searchButton" type="submit">
+          <CiSearch className="search-icon" />
+        </button>
       </div>
       <div className="menuButtons">
         <button
@@ -100,7 +101,7 @@ const Interface = () => {
           }}
           className="shoppingListButton"
         >
-          <FaShoppingBasket />
+          <RiShoppingCartLine />
         </button>
 
         <button
@@ -118,7 +119,7 @@ const Interface = () => {
           }}
           className="favouriteButton"
         >
-          <FaHeart />
+          <BiLike style={{ fontSize: "25px" }} />
         </button>
       </div>
 

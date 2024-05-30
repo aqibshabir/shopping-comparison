@@ -70,7 +70,7 @@ export default function App() {
 
           {isLoggedIn ? (
             <>
-              <Route path="/menu" element={<Menu />} />
+              <Route path="/recipe" element={<Menu />} />
               <Route path="/shopping-list" element={<ShoppingList />} />
               <Route path="/shopping-lists" element={<ShoppingLists />} />
               <Route path="/map" element={<Map />} />

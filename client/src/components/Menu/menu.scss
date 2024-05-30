@@ -7,24 +7,53 @@
 }
 .searchContainer {
   display: flex;
-  margin: 12px;
+  margin-top: 50px;
   gap: 5px;
   :focus {
-    background-color: #d5efff;
+    background-color: #f1f1f1;
   }
 }
+
+.searchButton {
+  margin-left: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 3px;
+  padding-left: 3px;
+  font-size: 25px;
+}
+
+.search-icon {
+  border: none;
+  color: white;
+  font-size: 22px;
+}
+
 .searchInput {
-  width: 240px;
-  font-size: 0.9em;
+  width: 200px;
+  border: 2px solid rgba(195, 195, 195, 0.428);
+  font-size: large;
 }
 
 .menuButtons {
   display: flex;
+  align-self: start;
   gap: 10px;
+  margin-left: 20px;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 .favouriteButton {
-  background-color: rgb(252, 85, 85);
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(195, 195, 195, 0.428);
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .inputContainer {
   display: flex;
@@ -33,12 +62,10 @@
   justify-content: center;
 }
 .inputedIngredients {
-  border-top: 10px solid #2ec64a;
   border-radius: 10px;
   padding: 10px;
   display: flex;
   justify-content: center;
-  background-color: #68e87f;
   margin-bottom: 10px;
   font-size: 1.2em;
   cursor: pointer;
@@ -65,12 +92,12 @@
   display: flex;
 }
 .card:nth-child(odd) {
-  background-color: #fef6a4;
-  border-top: 10px solid #e5de96;
+  background-color: #f8f8f8;
+  border: 1px solid rgb(231, 231, 231);
 }
 .card:nth-child(even) {
-  background-color: #a3ddff;
-  border-top: 10px solid #48bdff;
+  background-color: rgb(30, 23, 126);
+  border: 1px solid rgb(21, 16, 90);
 }
 .checkbox {
   width: 28px;
@@ -150,7 +177,17 @@
   transition: all 0.1s;
 }
 .shoppingListButton {
-  background-color: #68e87f;
+  background-color: rgb(241, 241, 241);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(195, 195, 195, 0.428);
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .shoppingListButton:active {
   transform: scale(90%);
