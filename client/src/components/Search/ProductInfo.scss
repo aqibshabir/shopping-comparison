@@ -104,12 +104,11 @@
     font-size: 9px;
   }
 
-
   @media (min-width: 600px) {
     display: flex;
     flex-direction: row;
     align-items: start;
-justify-content: center;
+    justify-content: center;
     // gap: 20px; // Adjust as needed for spacing
     margin: 18px;
     .productName {

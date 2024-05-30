@@ -28,8 +28,6 @@ export default function App() {
   const content = useSelector(selectContent);
   const dispatch = useDispatch();
 
-  const _apiURL = apiURL();
-
   useEffect(() => {
     if (content.text) {
       if (content.type == "success") {

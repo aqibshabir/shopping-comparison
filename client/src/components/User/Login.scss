@@ -76,10 +76,10 @@
   border-radius: 10px;
 }
 
-
 .trolley-container {
   display: flex;
   justify-content: center;
+  margin-top: 200px;
 }
 
 .trolley-login {
@@ -88,7 +88,7 @@
   margin-bottom: 20px;
 }
 
-.input-email  {
+.input-email {
   margin-bottom: 20px;
   border: 2px solid rgba(195, 195, 195, 0.278);
   font-size: medium;
@@ -127,6 +127,7 @@
 .user-container {
   display: flex;
   justify-content: center;
+  margin-top: 200px;
 }
 
 .forgot-password {
@@ -159,6 +160,7 @@
 .icon-container {
   display: flex;
   justify-content: center;
+  margin-top: 200px;
 }
 
 .nav-icon {

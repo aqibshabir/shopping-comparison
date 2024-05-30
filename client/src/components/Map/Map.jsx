@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, TextField } from "@mui/material";
+import { Typography, TextField, colors } from "@mui/material";
 import Slider from "@mui/material/Slider";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
@@ -58,7 +58,6 @@ class Map extends React.Component {
   };
 
   filterShopsByDistance(userDistance) {
-    const start = Date.now();
     const { position } = this.state;
     const filteredShops = jsonData.filter((shop) => {
       const distance = this.calculateDistance(
@@ -106,60 +105,79 @@ class Map extends React.Component {
 
   header = () => {
     return (
-      <div>
-        <Typography
-          variant="h4"
-          style={{ textAlign: "center", marginBottom: 20 }}
-        >
-          S H O P F I N D E R
-        </Typography>
-        <TextField
-          label="Search"
-          variant="outlined"
-          style={{ width: "100%", marginBottom: "10px" }}
-          onChange={(event) => {
-            this.setState({ searchText: event.target.value });
-          }}
-        />
-
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+          marginTop: "50px",
+        }}
+      >
+        <div>
+          <div style={{ display: "flex" }}>
+            <TextField
+              label="Search"
+              style={{
+                width: "200px",
+                fontSize: "large",
+                marginBottom: "20px",
+                borderRadius: "25%",
+                marginRight: "10px",
+              }}
+              onChange={(event) => {
+                this.setState({ searchText: event.target.value });
+              }}
+            />
+            <Button
+              variant="contained"
+              onClick={this.handleSearch}
+              style={{
+                width: 40,
+                height: 40,
+                backgroundColor: "rgb(30, 23, 126)",
+                borderRadius: "20px",
+                marginRight: "5px",
+              }}
+            >
+              <SearchIcon />
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={this.resetAll}
+              style={{
+                width: 40,
+                height: 40,
+                borderWidth: "2.5px",
+                borderColor: "rgb(196, 196, 196)",
+                borderRadius: "20px",
+                color: "rgb(70, 69, 69)",
+              }}
+            >
+              <RestartAltIcon />
+            </Button>
+          </div>
+        </div>
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
+            justifyItems: "flex-start",
             alignItems: "center",
+            width: "100%",
           }}
         >
-          <Typography style={{ fontSize: 16, marginRight: "10px" }}>
-            Distance:
-          </Typography>
           <Slider
-            style={{ width: "70%" }}
-            //value={this.state.distance}
+            style={{
+              width: "200px",
+              color: "rgb(30, 23, 126)",
+              marginLeft: "20px",
+            }}
             valueLabelDisplay="auto"
             step={0.1}
             min={0.1}
             max={50}
             onChange={this.handleDistanceChange}
           />
-        </div>
-
-        <div>
-          <Button
-            variant="contained"
-            onClick={this.handleSearch}
-            style={{ width: "50%", height: 40 }}
-          >
-            <SearchIcon />
-            Search
-          </Button>
-          <Button
-            variant="outlined"
-            onClick={this.resetAll}
-            style={{ width: "50%", height: 40, borderWidth: "2.5px" }}
-          >
-            <RestartAltIcon />
-            Reset
-          </Button>
         </div>
       </div>
     );
@@ -176,7 +194,7 @@ class Map extends React.Component {
             <MapContainer
               center={position}
               zoom={13}
-              style={{ width: "100%", height: "80vh" }}
+              style={{ width: "100vw", height: "70vh", marginTop: "10px" }}
             >
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -212,7 +230,10 @@ class Map extends React.Component {
                   zIndex: 1000,
                 }}
               >
-                <LocationSearchingIcon color="primary" fontSize="large" />
+                <LocationSearchingIcon
+                  color="rgb(30, 23, 126)"
+                  fontSize="large"
+                />
               </div>
             </MapContainer>
           </div>
