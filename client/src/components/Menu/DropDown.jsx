@@ -12,23 +12,15 @@ const DropDown = ({ recipe }) => {
     if (recipe.summary) {
       gsap.fromTo(
         dropDownRef.current,
-        { height: 0, duration: 1 },
-        { height: "auto", duration: 1.5 }
+        { height: 0, duration: 0.1 },
+        { height: "auto", duration: 0 }
       );
     }
   }, [recipe]);
   console.log(recipe);
   return (
     <>
-      {/* spinner */}
-      {!recipe.summary ? (
-        <div className="lds-ring">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      ) : (
+      {recipe.summary && (
         <div ref={dropDownRef} className="dropDownInformation">
           <div className="recipeImageContainer">
             {recipe && recipe.image && (

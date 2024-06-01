@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import {
   deleteInput,
   setFavourite,
-  setState,
   setActive,
   getFavourites,
 } from "../../redux/MenuSlice";
 import DropDown from "./DropDown";
 import { toast } from "react-toastify";
-import { MenuList } from "@mui/material";
 import axios from "axios";
 import { apiURL } from "../../config";
+import { HiOutlineSave } from "react-icons/hi";
 
 const Lists = ({ ingredients, meals, recipe, infoRef, showInformation }) => {
   const dispatch = useDispatch();
@@ -84,7 +83,7 @@ const Lists = ({ ingredients, meals, recipe, infoRef, showInformation }) => {
                         }}
                         className="saveButton"
                       >
-                        Save
+                        <HiOutlineSave size={24} />
                       </button>
                     </div>
                   </div>
